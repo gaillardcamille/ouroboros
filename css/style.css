@@ -8,7 +8,40 @@ html,
 body {
   position: relative;
   font-size: 1em;
-  overflow-x: hidden;
+  overflow: hidden;
   height: 100%;
-  background-color: #F7F7F7;
+  width: 100%;
+}
+
+#debutJeu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+#debutJeu div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+#debutJeu div p:last-child {
+  margin-top: 50px;
+  font-style: italic;
+}
+#debutJeu > p:last-child {
+  font-size: 15px;
+  font-style: italic;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#debutJeu h1 {
+  margin: 200px auto;
+  text-align: center;
+  font-size: 50px;
 }/*# sourceMappingURL=style.css.map */
