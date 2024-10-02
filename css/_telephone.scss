@@ -199,6 +199,35 @@
 }
 
 ////////////////////////////
+/////// NOTIFICATION ///////
+////////////////////////////
+
+#notifications {
+	position: absolute;
+    top: -140px;
+    width: 70%;
+    left: 15%;
+    height: 109px;
+
+	div {
+		position: absolute;
+		top: 0;
+		width: 90%;
+		border: 1px solid #A05542;
+		background-color: #d38d7c;
+		padding: 10px 15px;
+		border-radius: 10px;
+		transition: all linear .3s;
+		z-index: 2;
+
+		p:first-child {
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+////////////////////////////
 ///////// MESSAGES /////////
 ////////////////////////////
 
@@ -279,5 +308,32 @@
 		color: rgb(12, 84, 167);
 		font-size: 13px;
 		cursor: pointer;
+		position: relative;
+		left: 0;
+		transition: all linear .2s;
+	}
+
+	.cant {
+		animation: cant 0.5s ease-in-out;
+	}
+
+	@keyframes cant {
+
+		0%,
+		100% {
+			transform: translateX(0);
+		}
+	
+		25% {
+			transform: translateX(-5px);
+		}
+	
+		50% {
+			transform: translateX(10px);
+		}
+	
+		75% {
+			transform: translateX(-5px);
+		}
 	}
 }

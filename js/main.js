@@ -81,7 +81,44 @@ $(document).ready(function () {
 		$("#linkedin").css("right", "0")
 	});
 
-	$("#connexion").on("click", function () {
+	$("#forgetPassword").on("click", function () {
+		if (sendingForgetPassword) {
+			$("#forgetPassword").addClass("cant");
+
+            // Retirer la classe après l'animation
+            setTimeout(function() {
+                $("#forgetPassword").removeClass("cant");
+            }, 500);
+		}
+
+		if (!sendingForgetPassword) {
+			sendingForgetPassword = true
+			$("#notifGmail").css("top", "160%")
+	
+			nombreMail += 1;
+			$("#nombreMail").text(nombreMail);
+			updateNotificationDisplay();
+			
+			setTimeout(function() {
+				$("#notifGmail").css("top", "0");
+			}, 4000);
+		}
+	});
+
+	$("#connexionButton").on("click", function () {
+		var username = $("#user").val();
+		var password = $("#password").val();
+	
+		var validUsername = "Simon.Rernard";
+		var validPassword = "S!m0N_rd";
+	
+		if (!sendingForgetPassword || username === "" || password === "" || username !== validUsername || password !== validPassword) {
+			$("#connexionButton").addClass("cant");
+
+            setTimeout(function() {
+                $("#connexionButton").removeClass("cant");
+            }, 500);
+		}
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
