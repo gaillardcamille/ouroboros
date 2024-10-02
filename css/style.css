@@ -67,8 +67,8 @@ body {
   top: 49px;
   width: 449px;
   height: 832px;
-  position: absolute;
-  right: 223px;
+  position: relative;
+  left: 155px;
   border-radius: 29px;
   overflow: hidden;
   z-index: 31;
@@ -76,12 +76,58 @@ body {
 #telephone > div:first-child {
   width: 100%;
   height: 100%;
-  background-color: #963535;
+  background-image: url("../img/background/Fond_verouille.png");
   z-index: 40;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   top: 0;
+  left: 0;
   transition: all linear 0.5s;
+}
+#telephone > div:last-child {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/background/Fond_deverouille.png");
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all linear 0.5s;
+}
+#telephone > div:last-child .bandeau {
+  width: calc(100% - 40px);
+  padding: 0 20px;
+  position: absolute;
+  color: white;
+  background-image: url("../img/icons/Barre_top.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#telephone > div:last-child .bandeau:first-of-type {
+  top: -4px;
+  height: 62px;
+  z-index: 40;
+}
+#telephone > div:last-child .bandeau:first-of-type img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+#telephone > div:last-child .bandeau:last-of-type {
+  bottom: -10px;
+  font-size: 30px;
+  background-image: url("../img/icons/Barre_bot.png");
+  height: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 39;
+}
+#telephone > div:last-child .bandeau:last-of-type i:last-child {
+  left: 49%;
+  position: relative;
+  transform: translateX(-50%);
+  cursor: pointer;
+  top: 32%;
 }
 
 #imageTelephone {
@@ -91,25 +137,6 @@ body {
   height: 1000px;
   -o-object-fit: contain;
      object-fit: contain;
-}
-
-#deverouillageTelephone > div:first-child {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 75px;
-  background-color: rgb(207, 158, 158);
-  border-radius: 0 0 50% 50%;
-  z-index: 30;
-}
-#deverouillageTelephone > div:last-child {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100px;
-  background-color: rgb(207, 158, 158);
-  border-radius: 50% 50% 0 0;
-  z-index: 30;
 }
 
 #contenuTelephone {
@@ -131,9 +158,7 @@ body {
   position: relative;
   width: 90px;
   aspect-ratio: 1;
-  background-color: aliceblue;
   border-radius: 5px;
-  box-shadow: 0 0 6px -3px black;
   cursor: pointer;
   transform: scale(1);
   transition: all linear 0.2s;
@@ -151,72 +176,96 @@ body {
   border-radius: 100%;
   color: white;
 }
-#iconsTelephone > div i {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  color: #963535;
-}
-#iconsTelephone > div p {
-  position: absolute;
-  bottom: 5px;
-  transform: translateY(0%);
-  text-align: center;
+#iconsTelephone > div img {
+  height: 100%;
   width: 100%;
-  font-size: 15px;
-  transition: all linear 0.2s;
-  z-index: 1;
-}
-#iconsTelephone > div::before {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 27px;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  border-radius: 0 0 5px 5px;
-  transition: all linear 0.2s;
-  z-index: 1;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #iconsTelephone > div:hover {
   transform: scale(1.05);
 }
 
-#messages {
+.application {
   position: absolute;
-  top: -20px;
+  top: -40px;
   right: -100%;
   width: 100%;
-  height: calc(100% - 50px);
-  padding: 50px 0;
+  height: calc(100% - 80px);
+  padding: 80px 0;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+}
+.application h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#messages {
+  background-color: rgb(248, 225, 221);
+}
+#messages #message1,
+#messages #message2 {
+  position: absolute;
+  top: 10px;
+  right: -100%;
+  width: calc(100% - 80px);
+  height: calc(92% - 40px);
+  padding: 20px 40px;
   background-color: aliceblue;
   z-index: 2;
   transition: all ease-in-out 0.5s;
 }
-#messages h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#messages #message1,
-#messages #message2 {
-  display: none;
-  z-index: 3;
-}
-#messages .apercu {
+
+.apercu {
   padding: 15px 50px;
   cursor: pointer;
 }
-#messages .apercu p:first-child {
+.apercu p:first-child {
   font-weight: 700;
   padding-bottom: 5px;
 }
-#messages .apercu p:last-child {
+.apercu p:last-child {
   font-style: italic;
 }
-#messages .apercu:hover {
+.apercu:hover {
   background-color: rgb(203, 209, 214);
+}
+
+#linkedin {
+  background-color: rgb(255, 255, 255);
+}
+
+#connexion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+  margin-top: 100px;
+}
+#connexion input {
+  padding: 10px 15px;
+  border: none;
+  background-color: unset;
+  border-bottom: 1px solid black;
+}
+#connexion button {
+  background-color: unset;
+  border: 1px solid black;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+  color: black;
+}
+#connexion button:hover {
+  background-color: black;
+  color: white;
+}
+#connexion p {
+  font-style: italic;
+  color: rgb(12, 84, 167);
+  font-size: 13px;
+  cursor: pointer;
 }
 
 main {

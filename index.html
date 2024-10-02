@@ -31,48 +31,47 @@
 				<img id="imageTelephone" src="img\background\Telephone.png">
 
 				<div id="telephone">
+
 					<div id="verouillageTelephone"></div>
 
-					<div id="deverouillageTelephone">
-						<div></div>
+					<div>
+						<div class="bandeau">
+							<img src="img/icons/Icones_wifi_batterie.png">
+						</div>
 	
 						<div id="contenuTelephone">
 							
 							<section id="iconsTelephone">
 								<div id="ouvrirMessages">
-									<span id="nombreMessage"></span>
-									<i class="fa-solid fa-message"></i>
-									<p>Message</p>
+									<span class="notificationNumber" id="nombreMessage"></span>
+									<img src="img/icons/Icon_messages.png">
 								</div>
 	
 								<div id="ouvrirLinkedin">
-									<span id="nombreMessage"></span>
-									<i class="fa-brands fa-linkedin"></i>
-									<p>Linkedin</p>
+									<span class="notificationNumber" id="nombreLinkedin"></span>
+									<img src="img/icons/Icon_linkedIn.png">
 								</div>
 	
 								<div id="ouvrirMail">
-									<span id="nombreMessage"></span>
-									<i class="fa-solid fa-envelope"></i>
-									<p>E-mail</p>
+									<span class="notificationNumber" id="nombreMail"></span>
+									<img src="img/icons/Icon_mail.png">
 								</div>
 	
 								<div id="ouvrirCalendrier">
-									<i class="fa-solid fa-calendar"></i>
-									<p>Calendrier</p>
+									<img src="img/icons/Icon_calendrier.png">
+
 								</div>
 	
 								<div id="ouvrirCalculatrice">
-									<i class="fa-solid fa-calculator"></i>
-									<p>Calculatrice</p>
+									<img src="img/icons/Icon_calculatrice.png">
+
 								</div>
 							</section>
 							
-							<section id="messages">
-								<div>
-									<p><i class="fa-solid fa-arrow-right-from-bracket"></i></p>
-								</div>
+							<section class="application" id="messages">
+
 								<h2>Messages</h2>
+
 								<div class="apercu" id="ouvrirMessage1">
 									<p class="contact">Maman</p>
 									<p>Je ne reçois plus aucun messa...</p>
@@ -92,6 +91,7 @@
 									<p class="other">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 									<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 								</div>
+
 								<div id="message2">
 									<p class="numeroContact">Papa</p>
 									<p class="other">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
@@ -101,12 +101,32 @@
 									<p class="other">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 									<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
 								</div>
+
+							</section>
+
+							<section class="application" id="linkedin">
+								<h2>LinkedIn</h2>
+
+								<div id="connexion">
+									<input id="user" type="text" placeholder="Nom d'utilisateur">
+									<input id="password" type="text" placeholder="Mot de passe">
+									<button id="connexion">Se connecter</button>
+									<p id="forgetPassword">Mot de passe oublié ?</p>
+								</div>
+
+								<div id="messageLinkedin">
+
+								</div>
 							</section>
 	
 						</div>
 		
-						<div></div>
+						<div class="bandeau">
+							<!-- <i class="fa-solid fa-play"></i> -->
+							<i class="fa-solid fa-house" id="homeTelephone"></i>
+						</div>
 					</div>
+
 				</div>
 
 			</section>
