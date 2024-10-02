@@ -38,18 +38,28 @@
 	display: none;
 }
 
-#telephone {
+#zoneTelephone {
 	position: absolute;
-	bottom: -99%;
-	right: 10%;
-	height: 850px;
-	background-color: rgb(255, 244, 244);
-	width: 500px;
-	z-index: 30;
-	transition: all ease-in-out .8s;
-	overflow-x: hidden;
+    bottom: -99%;
+    right: 0;
+    height: 1000px;
+    width: 827px;
+    z-index: 30;
+    transition: all linear 0.8s;
+    overflow-x: hidden;
+}
 
-	> div:first-child {
+#telephone {
+	top: 49px;
+    width: 449px;
+    height: 832px;
+    position: absolute;
+    right: 223px;
+	border-radius: 29px;
+	overflow: hidden;
+	z-index: 31;
+
+	>div:first-child {
 		width: 100%;
 		height: 100%;
 		background-color: #963535;
@@ -61,7 +71,16 @@
 	}
 }
 
+#imageTelephone {
+	position: absolute;
+	right: 0;
+	z-index: 30;
+	height: 1000px;
+	object-fit: contain;
+}
+
 #deverouillageTelephone {
+
 	>div:first-child {
 		position: absolute;
 		top: 0;
@@ -85,20 +104,28 @@
 
 #contenuTelephone {
 	position: absolute;
-	top: 50px;
-	width: calc(100% - 100px);
-	height: 600px;
-	overflow-x: auto;
-	padding: 65px 50px;
+    top: 40px;
+    width: calc(100% - 130px);
+    height: 630px;
+    padding: 65px 65px;
+}
+
+#iconsTelephone {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: calc((100% - 90px * 3) / 2);
+	row-gap: 40px;
 
 	> div {
 		position: relative;
-		width: 80px;
+		width: 90px;
 		aspect-ratio: 1;
 		background-color: aliceblue;
 		border-radius: 5px;
 		box-shadow: 0 0 6px -3px black;
 		cursor: pointer;
+		transform: scale(1);
+		transition: all linear .2s;
 
 		span {
 			position: absolute;
@@ -112,7 +139,6 @@
 			background-color: #963535;
 			border-radius: 100%;
 			color: white;
-			
 		}
 
 		i {
@@ -131,7 +157,7 @@
 			width: 100%;
 			font-size: 15px;
 			transition: all linear .2s;
-			z-index: 5;
+			z-index: 1;
 		}
 
 		&::before {
@@ -144,23 +170,58 @@
 			position: absolute;
 			border-radius: 0 0 5px 5px;
 			transition: all linear .2s;
-			z-index: 5;
+			z-index: 1;
 		}
 
 		&:hover {
-			p {
-				position: absolute;
-				bottom: 30%;
-				text-align: center;
-				width: 100%;
-				font-size: 15px;
-				transform: translateY(50%);
-			}
+			transform: scale(1.05);
 
-			&::before {
-				height: 60%;
-				border-radius: 5px;
-			}
+		}
+	}
+}
+
+/////////////////////////////////
+////// MESSAGES
+/////////////////////////////////
+
+#messages {
+	position: absolute;
+	top: -20px;
+	right: -100%;
+	width: 100%;
+	height: calc(100% - 50px);
+	padding: 50px 0;
+	background-color: aliceblue;
+	z-index: 2;
+	transition: all ease-in-out 0.5s;
+
+	h2 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	#message1,
+	#message2 {
+		display: none;
+		z-index: 3;
+	}
+
+	.apercu {
+		padding: 15px 50px;
+		cursor: pointer;
+
+
+		p:first-child {
+			font-weight: 700;
+			padding-bottom: 5px;
+		}
+
+		p:last-child {
+			font-style: italic;
+		}
+
+		&:hover {
+			background-color: rgb(203, 209, 214);
 		}
 	}
 }

@@ -12,6 +12,8 @@ main {
 	color: white;
 	cursor: pointer;
 	z-index: 99;
+	top: 0;
+	transition: all ease-out .7s;
 
 	div {
 		display: flex;

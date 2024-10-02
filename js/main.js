@@ -5,21 +5,25 @@ $(document).ready(function () {
 	$("#nombreMessage").text(nombreMessage);
 
 	$("#debutJeu").on("click", function () {
-		$("#debutJeu").css("display", "none")
+		$("#debutJeu").css("top", "-100%")
 	});
 
 	$("#ouvrirTelephone").on("click", function () {
-		$("#telephone").css("bottom", "50px")
+		$("#zoneTelephone").css("bottom", "0")
 		$("#backgroundTelephone").css("display", "block")
 	});
 
 	$("#backgroundTelephone").on("click", function () {
-		$("#telephone").css("bottom", "-99%")
+		$("#zoneTelephone").css("bottom", "-99%")
 		$("#backgroundTelephone").css("display", "none")
 	});
 
 	$("#verouillageTelephone").on("click", function () {
 		$("#verouillageTelephone").css("top", "-100%")
+	});
+
+	$("#ouvrirMessages").on("click", function () {
+		$("#messages").css("right", "0")
 	});
 	
 });
