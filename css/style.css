@@ -305,14 +305,36 @@ main {
 #messages #message1,
 #messages #message2 {
   position: absolute;
-  top: 10px;
+  top: 70px;
   right: -100%;
-  width: calc(100% - 80px);
   height: calc(92% - 40px);
-  padding: 20px 40px;
-  background-color: aliceblue;
+  background-color: rgb(248, 225, 221);
   z-index: 2;
   transition: all ease-in-out 0.5s;
+  width: 100%;
+}
+#messages #message1 .numeroContact,
+#messages #message2 .numeroContact {
+  color: #917f92;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+#messages .discussion {
+  background-color: rgb(248, 225, 221);
+  height: 80%;
+}
+#messages .discussion .other {
+  background-color: white;
+}
+#messages .discussion .date {
+  color: #917f92;
+}
+#messages .discussion::before {
+  background: linear-gradient(180deg, rgb(248, 225, 221) 0%, rgba(248, 225, 221, 0) 100%);
+}
+#messages .discussion::after {
+  background: linear-gradient(0deg, rgb(248, 225, 221) 0%, rgba(248, 225, 221, 0) 100%);
 }
 
 .apercuMessage {
@@ -366,7 +388,10 @@ main {
 }
 
 #linkedin {
-  background-color: rgb(255, 255, 255);
+  background-color: #324C59;
+}
+#linkedin h2 {
+  color: white;
 }
 
 #connexion {
@@ -380,23 +405,33 @@ main {
   padding: 10px 15px;
   border: none;
   background-color: unset;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
+  color: white;
+}
+#connexion input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.767);
+}
+#connexion input::placeholder {
+  color: rgba(255, 255, 255, 0.767);
+}
+#connexion input:focus-visible {
+  outline: unset;
 }
 #connexion button {
   background-color: unset;
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 10px 15px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
-  color: black;
+  color: white;
 }
 #connexion button:hover {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: #324C59;
 }
 #connexion p {
   font-style: italic;
-  color: rgb(12, 84, 167);
+  color: rgb(151, 176, 204);
   font-size: 13px;
   cursor: pointer;
   position: relative;
@@ -408,40 +443,119 @@ main {
   position: absolute;
   top: 55px;
   right: -100%;
-  width: 100%;
+  width: calc(100% - 80px);
   height: calc(80% - 80px);
+  padding: 20px 40px;
   margin: 80px 0;
   z-index: 2;
   transition: all ease-in-out 0.5s;
-  background-color: rgb(255, 255, 255);
+  background-color: #324C59;
+}
+#messageLinkedin h3 {
+  color: white;
+}
+
+.discussion {
+  background-color: #73AABA;
+  height: 100%;
+  overflow-x: auto;
+  position: relative;
+}
+.discussion span {
+  display: block;
+  color: #A05542;
+  margin-bottom: 10px;
+}
+.discussion p {
+  background-color: #A3C8CF;
+  text-align: end;
+  padding: 15px 25px;
+  margin: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 7px;
+}
+.discussion .other {
+  background-color: #CBE2E7;
+  text-align: left;
+}
+.discussion .date {
+  background-color: unset;
+  text-align: center;
+  color: #324C59;
+}
+.discussion::before {
+  content: "";
+  display: block;
+  position: sticky;
+  left: 0;
+  top: 0;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(180deg, rgb(50, 76, 89) 0%, rgba(115, 170, 186, 0) 100%);
+}
+.discussion::after {
+  content: "";
+  display: block;
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  height: 10px;
+  width: 100%;
+  background: linear-gradient(0deg, rgb(115, 170, 186) 0%, rgba(115, 170, 186, 0) 100%);
 }
 
 #linkedin1,
 #linkedin2 {
   position: absolute;
-  top: 10px;
+  top: -50px;
   right: -100%;
-  width: calc(100% - 80px);
   height: calc(92% - 40px);
-  padding: 20px 40px;
-  background-color: aliceblue;
+  background-color: #324C59;
   z-index: 2;
   transition: all ease-in-out 0.5s;
+  width: 100%;
+}
+#linkedin1 .numeroContact,
+#linkedin2 .numeroContact {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+#linkedin1::after,
+#linkedin2::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  height: 28%;
+  width: 100%;
+  background-color: #73AABA;
+}
+
+#ouvrirLinkedin1 {
+  border: #A05542 3px solid;
 }
 
 .apercuLinkedin {
-  padding: 15px 50px;
+  padding: 15px 20px 18px 20px;
+  margin: 20px 0;
   cursor: pointer;
+  background-color: #73AABA;
+  border-radius: 10px;
+  transition: all linear 0.15s;
 }
 .apercuLinkedin p:first-child {
   font-weight: 700;
   padding-bottom: 5px;
+  color: #A05542;
 }
 .apercuLinkedin p:last-child {
-  font-style: italic;
+  color: #324C59;
 }
 .apercuLinkedin:hover {
-  background-color: rgb(203, 209, 214);
+  background-color: rgb(255, 255, 255);
 }
 
 .cant {
@@ -560,7 +674,7 @@ main {
   width: calc(100% - 60px);
 }
 
-#newMessage {
+.newMessage {
   display: none;
 }
 

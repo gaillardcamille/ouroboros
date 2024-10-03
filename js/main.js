@@ -1,13 +1,12 @@
 $(document).ready(function () {
 
 	// Variables
-	var nombreMessage = 8;
+	var nombreMessage = 15;
 	var message1Opened = false;
 	var message2Opened = false;
 
-	var nombreLinkedin = 2;
+	var nombreLinkedin = 1;
 	var linkedin1Opened = false;
-	var linkedin2Opened = false;
 	var connectedLinkedin = false;
 
 	var nombreMail = 0;
@@ -59,7 +58,7 @@ $(document).ready(function () {
 		$("#message1").css("right", "0")
 
 		if (!message1Opened) { 
-			nombreMessage -= 3;
+			nombreMessage -= 10;
 
 			$("#nombreMessage").text(nombreMessage);
 			updateNotificationDisplay();
@@ -139,6 +138,7 @@ $(document).ready(function () {
 
 	$("#ouvrirLinkedin1").on("click", function () {
 		$("#linkedin1").css("right", "0")
+		$("#ouvrirLinkedin1").css("border", "unset")
 
 		if (!linkedin1Opened) { 
 			nombreLinkedin -= 1;
@@ -146,18 +146,6 @@ $(document).ready(function () {
 			$("#nombreLinkedin").text(nombreLinkedin);
 			updateNotificationDisplay();
 			linkedin1Opened = true;
-		}
-	});
-
-	$("#ouvrirLinkedin2").on("click", function () {
-		$("#linkedin2").css("right", "0")
-
-		if (!linkedin2Opened) { 
-			nombreLinkedin -= 1;
-
-			$("#nombreLinkedin").text(nombreLinkedin);
-			updateNotificationDisplay();
-			linkedin2Opened = true;
 
 			$("#lieuBureau").css("top", "120%")
 	
@@ -167,6 +155,10 @@ $(document).ready(function () {
 
 			$("#goToDesk").css("display", "block")
 		}
+	});
+
+	$("#ouvrirLinkedin2").on("click", function () {
+		$("#linkedin2").css("right", "0")
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -257,7 +249,7 @@ $(document).ready(function () {
 					$("#notifMessage").css("top", "0");
 				}, 4000);
 
-				$("#newMessage").css("display", "block")
+				$(".newMessage").css("display", "block")
         	}
 		}
 	});

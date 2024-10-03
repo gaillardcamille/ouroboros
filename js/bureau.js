@@ -26,7 +26,7 @@ $(document).ready(function () {
 			name: "Marc",
 		},
 		{
-			text: "C'est sûrement pour cette raison qu'il n'est pas venu au restaurant le vendredi 13 septembre...",
+			text: "C'est sûrement pour cette raison qu'il n'est pas venu au restaurant le lundi 16 septembre...",
 			name: "Marc",
 		},
 		{
@@ -37,7 +37,7 @@ $(document).ready(function () {
 			]
 		},
 		{
-			text: "Il a disparu ?! Vous êtes sûre...? C'est peut-être pour ça qu'il n'est pas venu au restaurant prévu le vendredi 13 septembre...",
+			text: "Il a disparu ?! Vous êtes sûre...? C'est peut-être pour ça qu'il n'est pas venu au restaurant prévu le ludni 16 septembre...",
 			name: "Marc",
 			choices: [
 				{ text: "Il était au courant de ça?", next: 7 }
