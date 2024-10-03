@@ -9,6 +9,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/bureau.js"></script>
 
 		<title>Projet Ouroboros</title>
 	</head>
@@ -27,12 +28,26 @@
 			</section>
 
 			<section id="maison">
+
 				<button id="endTheGame">
 					Finir le jeu
 				</button>
+
+				<button id="goToDesk">Aller sur le lieu de travail</button>
 			</section>
 
 			<section id="bureau">
+				<button id="goToHome">Aller à la maison</button>
+
+				<img id="character1" src="img/personnages/Marc.png" alt="Marc" class="character">
+				<img id="character2" src="img/personnages/Victor.png" alt="Victor" class="character">
+		
+				<div id="dialogue-box" class="dialogue-box">
+					<div id="name-tag" class="name-tag">Nom du personnage</div>
+					<p id="dialogue-text">Texte du dialogue</p>
+				</div>
+				<div id="choices" class="choices"></div>
+				<div id="overlay" class="overlay"></div>
 
 			</section>
 

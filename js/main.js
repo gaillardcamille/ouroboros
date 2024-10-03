@@ -161,10 +161,11 @@ $(document).ready(function () {
 
 			$("#lieuBureau").css("top", "120%")
 	
-			
 			setTimeout(function() {
 				$("#lieuBureau").css("top", "0");
 			}, 4000);
+
+			$("#goToDesk").css("display", "block")
 		}
 	});
 
@@ -345,4 +346,13 @@ $(document).ready(function () {
 		$("#finJeu div:first-child").css("top", "-100%")
 		$("#finJeu div:last-child").css("top", "-100%")
 	});
+
+	$("#goToDesk").on("click", function () {
+		$("#maison").css("right", "100%")
+		$("#bureau").css("right", "0%")
+	})
+	$("#goToHome").on("click", function () {
+		$("#maison").css("right", "0")
+		$("#bureau").css("right", "-100%")
+	})
 });

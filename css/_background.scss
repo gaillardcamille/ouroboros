@@ -117,10 +117,13 @@ main {
 }
 
 #maison {
-	background-image: url(../img/background/Fond_bureau.png);
+	background-image: url(../img/background/Fond_maison.png);
 	position: absolute;
 	height: 100%;
 	width: 100%;
 	background-position: center;
 	background-size: cover;
+	right: 0;
+	transition: right ease-in-out .5s;
 }
+

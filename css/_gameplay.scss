@@ -56,3 +56,31 @@
 		}
 	}
 }
+
+
+
+
+
+
+
+
+
+//////////////////////////
+
+
+#goToDesk {
+	display: none;
+	right: 20px;
+}
+
+#goToHome {
+	left: 20px;
+}
+
+#goToHome, #goToDesk {
+	position: absolute;
+	top: 50%;
+	font-size: 20px;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
