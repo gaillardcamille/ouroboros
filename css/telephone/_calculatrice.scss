@@ -40,13 +40,17 @@
 
 #zonePrive {
 	position: absolute;
-	padding: 130px 35px 92px;
-	height: calc(100% - 230px);
+	padding: 100px 35px 92px;
+    height: calc(100% - 200px);
 	width: calc(100% - 70px);
 	right: -100%;
 	top: 0;
-	background-image: url("../img/background/Fond_deverouille.png");
+	background-image: url(../../img/background/Fond_calculatrice.png);
 	transition: all ease-in-out .5s;
+
+	h2 {
+		margin-bottom: 35px;
+	}
 }
 
 #journal {

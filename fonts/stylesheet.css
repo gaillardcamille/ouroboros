@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Itim';
+    src: url('Itim-Regular.eot');
+    src: url('Itim-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Itim-Regular.woff2') format('woff2'),
+        url('Itim-Regular.woff') format('woff'),
+        url('Itim-Regular.ttf') format('truetype'),
+        url('Itim-Regular.svg#Itim-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,10 +1,10 @@
 @import 'global';
-@import 'telephone';
 @import 'background';
 @import 'gameplay';
 @import 'bureau';
 
 
-@import 'applications/messageries';
-@import 'applications/linkedin';
-@import 'applications/calculatrice';
+@import 'telephone/messageries';
+@import 'telephone/linkedin';
+@import 'telephone/calculatrice';
+@import 'telephone/telephone';
