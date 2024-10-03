@@ -632,21 +632,26 @@ main {
 }
 
 #journal {
-  background-color: rgb(248, 225, 221);
+  background-color: #7E566E;
   top: 0;
+}
+#journal h2 {
+  background-color: #6D4E61;
+  color: white;
+  margin: 0 30px;
+  padding: 15px 0;
 }
 #journal .pageJournal {
   position: absolute;
-  top: 13%;
+  top: 15%;
   right: -100%;
-  width: calc(100% - 112px);
+  width: calc(100% - 60px);
   height: -moz-fit-content;
   height: fit-content;
   margin: 10px 30px;
-  padding: 25px 25px;
+  padding: 25px 0px;
   z-index: 2;
   transition: all ease-in-out 0.5s;
-  border: 1px solid;
 }
 #journal .pageJournal:first-of-type {
   right: 0;
@@ -654,29 +659,102 @@ main {
 #journal .pageJournal h3 {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 #journal .pageJournal p {
   margin-bottom: 20px;
+  background-color: #D9D9D9;
+  padding: 20px 30px;
 }
-#journal .pageJournal button {
+#journal .pageJournal span {
+  background-color: #C49B85;
+  display: block;
+  padding: 15px 25px;
+}
+#journal .pageJournal .nextPage {
   border: unset;
   background-color: unset;
   font-size: 30px;
   right: 15px;
   position: absolute;
-  bottom: 0px;
+  top: 25px;
   cursor: pointer;
   transition: all linear 0.2s;
 }
-#journal .pageJournal button:hover {
+#journal .pageJournal .nextPage:hover {
   right: 10px;
+}
+#journal .pageJournal .prevPage {
+  border: unset;
+  background-color: unset;
+  font-size: 30px;
+  left: 15px;
+  position: absolute;
+  top: 25px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+#journal .pageJournal .prevPage:hover {
+  left: 10px;
 }
 
 #messagePrive {
-  background-color: rgb(248, 225, 221);
+  background-color: #444442;
   top: 0;
-  padding: 80px 30px;
-  width: calc(100% - 60px);
+  padding: 80px 0px;
+  width: 100%;
+}
+#messagePrive h2 {
+  color: #E8E5DC;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 35px;
+}
+#messagePrive h2::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: 60%;
+  transform: translateY(-50%);
+  display: block;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  background-color: #5D6C59;
+}
+#messagePrive .discussion {
+  background-color: #85847F;
+  height: 75%;
+}
+#messagePrive .discussion p {
+  background-color: #444442;
+}
+#messagePrive .discussion p span {
+  color: #9D8277;
+}
+#messagePrive .discussion .other {
+  background-color: #636159;
+}
+#messagePrive .discussion .date {
+  color: #444442;
+  background-color: unset;
+}
+#messagePrive .discussion::before {
+  background: linear-gradient(180deg, rgb(68, 68, 66) 0%, rgba(133, 132, 127, 0) 100%);
+}
+#messagePrive .discussion::after {
+  background: linear-gradient(0deg, rgb(133, 132, 127) 0%, rgba(133, 132, 127, 0) 100%);
+}
+#messagePrive::after {
+  content: "";
+  display: block;
+  position: relative;
+  left: 0;
+  bottom: 0px;
+  height: 28%;
+  width: 100%;
+  background-color: #85847F;
 }
 
 .newMessage {

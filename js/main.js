@@ -266,6 +266,17 @@ $(document).ready(function () {
 		}
 	});
 
+	$('.prevPage').on('click', function() {
+		const currentPage = $(this).closest('.pageJournal');
+		const prevPage = currentPage.prev('.pageJournal');
+	
+		if (prevPage.length) {
+		  	currentPage.css('right', '-100%');
+
+			prevPage.css('right', '0');
+		}
+	});
+
 	$("#ouvrirMessagePrive").on("click", function () {
 		$("#messagePrive").css("right", "0")
 
