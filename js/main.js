@@ -12,8 +12,12 @@ $(document).ready(function () {
 
 	var nombreMail = 0;
 	var mailOpened = false;
-
 	var sendingForgetPassword = false;
+
+	var connectedCalculatrice = false;
+	var lastMessage = false;
+	var nombreMessagePrive = 0;
+	var lastMessageOpened = false;
 
 	$("#nombreMessage").text(nombreMessage);
 	$("#nombreLinkedin").text(nombreLinkedin);
@@ -120,7 +124,7 @@ $(document).ready(function () {
 		var validUsername = "Simon.Rernard";
 		var validPassword = "S!m0N_rd";
 	
-		if (username === "" || password === "" || username !== validUsername || password !== validPassword) {
+		if (!sendingForgetPassword || username === "" || password === "" || username !== validUsername || password !== validPassword) {
 			$("#connexionButton").addClass("cant");
 
             setTimeout(function() {
@@ -167,6 +171,15 @@ $(document).ready(function () {
 	/////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////
 	
+	// Calendrier
+
+	$("#ouvrirCalendrier").on("click", function () {
+		$("#calendrier").css("right", "0")
+	});
+
+	/////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////
+	
 	// Mails
 	$("#ouvrirMail").on("click", function () {
 		$("#mail").css("right", "0")
@@ -195,6 +208,83 @@ $(document).ready(function () {
 	/////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////
 	
+	// Calculatrice
+
+	$("#ouvrirCalculatrice").on("click", function () {
+		$("#calculatrice").css("right", "0")
+
+		if (connectedCalculatrice) {
+			$("#zonePrive").css("right", "0")
+		}
+	});
+
+	$("#equal").on("click", function () {
+		var currentText = $('#result').text();
+		console.log(currentText)
+		if (currentText == "13092012" || currentText == "09132012") {
+			connectedCalculatrice = true
+			$("#zonePrive").css("right", "0")
+		}
+		else {
+			$('#result').text('');
+		}
+	});
+
+	$("#ouvrirJournal").on("click", function () {
+		$("#journal").css("right", "0")
+		$("#journal .pageJournal:first-of-type").css("right", "0");
+	});
+
+	$('.nextPage').on('click', function() {
+		const currentPage = $(this).closest('.pageJournal');
+		const nextPage = currentPage.next('.pageJournal');
+	
+		if (nextPage.length) {
+		  currentPage.css('right', '100%');
+	
+		  nextPage.css('right', '0');
+
+		  	if (nextPage.attr('id') === 'endPage' && !lastMessage) {
+				lastMessage = true
+				$("#notifMessage").css("top", "160%")
+			
+				nombreMessagePrive += 1;
+				$("#nombreMessagePrive").text(nombreMessagePrive);
+				updateNotificationDisplay();
+					
+				setTimeout(function() {
+					$("#notifMessage").css("top", "0");
+				}, 4000);
+
+				$("#newMessage").css("display", "block")
+        	}
+		}
+	});
+
+	$("#ouvrirMessagePrive").on("click", function () {
+		$("#messagePrive").css("right", "0")
+
+		if (lastMessage && !lastMessageOpened) {
+			nombreMessagePrive -= 1;
+
+			$("#nombreMessagePrive").text(nombreMessagePrive);
+			updateNotificationDisplay();
+			lastMessageOpened = true;
+
+			$("#finNotif").css("top", "120%")
+	
+			
+			setTimeout(function() {
+				$("#finNotif").css("top", "0");
+			}, 4000);
+
+			$("#endTheGame").css("display", "block")
+		}
+	});
+
+	/////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////
+	
 	// Home
 
 	$("#homeTelephone").on("click", function () {
@@ -209,6 +299,12 @@ $(document).ready(function () {
 		$("#mail").css("right", "-100%")
 		$("#mail1").css("right", "-100%")
 		$("#mail2").css("right", "-100%")
+
+		$("#calculatrice").css("right", "-100%")
+		$("#journal").css("right", "-100%")
+		$(".pageJournal").css("right", "-100%")
+		$("#messagePrive").css("right", "-100%")
+		$("#calendrier").css("right", "-100%")
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -225,4 +321,28 @@ $(document).ready(function () {
 			}
 		});
 	}
+
+
+
+
+
+
+
+
+
+
+	$("#endTheGame").on("click", function () {
+		$("#finJeu").css("top", "0")
+		
+
+		setTimeout(function() {
+			$("#finJeu div:first-child").css("top", "0")
+			$("#finJeu div:last-child").css("top", "0")
+		}, 700);
+	});
+
+	$("#finJeu button").on("click", function () {
+		$("#finJeu div:first-child").css("top", "-100%")
+		$("#finJeu div:last-child").css("top", "-100%")
+	});
 });

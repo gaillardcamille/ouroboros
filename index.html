@@ -26,6 +26,16 @@
 				<p>Cliquez pour commencer</p>
 			</section>
 
+			<section id="maison">
+				<button id="endTheGame">
+					Finir le jeu
+				</button>
+			</section>
+
+			<section id="bureau">
+
+			</section>
+
 			<div id="backgroundTelephone"></div>
 			<section id="zoneTelephone">
 				<img id="imageTelephone" src="img\background\Telephone.png">
@@ -36,12 +46,11 @@
 
 					<div>
 						<div class="bandeau">
-							<img src="img/icons/Icones_wifi_batterie.png">
 						</div>
 	
 						<div id="contenuTelephone">
 							
-							<section id="iconsTelephone">
+							<section class="iconsTelephone">
 								<div id="ouvrirMessages">
 									<span class="notificationNumber" id="nombreMessage"></span>
 									<img src="img/icons/Icon_messages.png">
@@ -59,12 +68,10 @@
 	
 								<div id="ouvrirCalendrier">
 									<img src="img/icons/Icon_calendrier.png">
-
 								</div>
 	
 								<div id="ouvrirCalculatrice">
 									<img src="img/icons/Icon_calculatrice.png">
-
 								</div>
 							</section>
 							
@@ -182,6 +189,107 @@
 
 							</section>
 
+							<section class="application" id="calculatrice">
+
+								<h2>Calculatrice</h2>
+
+								<div id="calcul">
+									<div id="result"></div>
+
+									<div>
+										<input type="button" value="7" onclick="ajouterResultat('7')">
+										<input type="button" value="8" onclick="ajouterResultat('8')">
+										<input type="button" value="9" onclick="ajouterResultat('9')">
+								  
+										<input type="button" value="4" onclick="ajouterResultat('4')">
+										<input type="button" value="5" onclick="ajouterResultat('5')">
+										<input type="button" value="6" onclick="ajouterResultat('6')">
+								
+										<input type="button" value="1" onclick="ajouterResultat('1')">
+										<input type="button" value="2" onclick="ajouterResultat('2')">
+										<input type="button" value="3" onclick="ajouterResultat('3')">
+								
+										<input type="button" value="0" onclick="ajouterResultat('0')">
+										<input type="button" id="equal" value="=">
+									</div>
+								</div>
+
+								<div id="zonePrive">
+									<div class="iconsTelephone">
+										<div id="ouvrirJournal">
+											<img src="img/icons/Icon_journal.png">
+										</div>
+
+										<div id="ouvrirMessagePrive">
+											<span class="notificationNumber" id="nombreMessagePrive"></span>
+											<img src="img/icons/Icon_messageriePrivee.png">
+										</div>
+									</div>
+
+									<div class="application" id="journal">
+										<h2>Journal</h2>
+
+										<div class="pageJournal">
+											<h3>3 août 2012</h3>
+											<p>
+												Lorem ispum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+											</p>
+											<button class="nextPage"><i class="fa-solid fa-arrow-right"></i></button>
+										</div>
+
+										<div class="pageJournal">
+											<h3>18 août 2012</h3>
+											<p>
+												Lorem ispum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ispum
+											</p>
+											<button class="nextPage"><i class="fa-solid fa-arrow-right"></i></button>
+										</div>
+
+										<div class="pageJournal">
+											<h3>18 août 2012</h3>
+											<p>
+												Lorem ispum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ispum
+											</p>
+											<button class="nextPage"><i class="fa-solid fa-arrow-right"></i></button>
+										</div>
+
+										<div class="pageJournal">
+											<h3>18 août 2012</h3>
+											<p>
+												Lorem ispum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ispum
+											</p>
+											<button class="nextPage"><i class="fa-solid fa-arrow-right"></i></button>
+										</div>
+
+										<div class="pageJournal" id="endPage">
+											<h3>12 Septembre 2012</h3>
+											<p>
+												Lorem ispum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ispum
+											</p>
+										</div>
+									</div>
+
+									<div class="application" id="messagePrive">
+										<h2>Messages avec Greg</h2>
+
+										<p class="other">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+										<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+										<p class="other">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+										<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+										<p class="other">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+										<p>Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum</p>
+										<p class="other" id="newMessage">Tu es connecté ! Tu n'es finalement pas allé voir ce projet ! Tant mieux ! J'ai découvert que Ouroboros avait un lien avec le gouvernement, dans mon groupe plusieurs rumeurs se sont propagés. Ils essaient de faire des soldats éternelles ! Quelle horreur, tu ne trouves pas ? Sinon, comment se fait-il que tu es disparu pendant si longtemps ?</p>
+
+									</div>
+								</div>
+
+							</section>
+
+							<section class="application" id="calendrier">
+								<img src="img/background/Fond_calendrier.png">
+
+							</section>
+							
 							<section id="notifications">
 								<div id="notifMail">
 									<p>Mails</p>
@@ -189,11 +297,10 @@
 								</div>
 
 								<div id="notifMessage">
-									<p>Message</p>
+									<p>Messages Privés</p>
 									<p>Vous avez reçu un nouveau message</p>
 								</div>
 							</section>
-	
 						</div>
 		
 						<div class="bandeau">
@@ -216,14 +323,69 @@
 					<h5>Nouveau lieu</h5>
 					<p>Vous pouvez dès à présent vous rendre sur le lieu de travail de Simon.</p>
 				</div>
+
+				<div id="finNotif">
+					<h5>Félicitations</h5>
+					<p>Vous avez beaucoup cherché ! Vous avez la possibilité de finir cette enquête.</p>
+				</div>
 			</section>
-			
 
 			<section id="ouvrirTelephone">
 				<i class="fa-solid fa-phone"></i>
 				<p>Ouvrir le téléphone</p>
 			</section>
+
+			<section id="finJeu">
+				<div>
+					<p>Suite à votre enquête vous avez pu trouvé les indices suivants :</p>
+					<br>
+					<br>
+					<p>Siméon a disparu le vendredi 13 Octobre</p>
+					<p>Il a donné de nombreuses informations personnelles à un projet nommé Ouroboros.</p>
+					<p>Il a de nombreux soucis d'argent, il avait besoin de l'aide de ses parents</p>
+					<p>Ouroboros serait un projet venant du gouvernement.</p>
+					<p>Greg vous apprend que le gouvernement serait en train de créer des soldats immortels</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div>
+						<button>Faire éclater le complot</button>
+						<button>Rester silencieux pour éviter les problèmes</button>
+					</div>
+				</div>
+
+				<div>
+					<h2>Projet Ouroboros</h2>
+					<br>
+					<br>
+					<p>Nous espérons que vous avez apprécié de jouer au jeu Ouroboros.</p>
+					<p>"Ouroboros" est un symbole ancien représentant un serpent se mangeant la queue.</p>
+					<p>Ce symbole peut signifier l'éternel cycle.</p>
+					<br>
+					<br>
+					<p>De Charline, Mélanie, Camille</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h1>Merci d'avoir joué !</h1>
+				</div>
+			</section>
+
 		</main>
 
+
+		<script>
+			function ajouterResultat(value) {
+				var currentText = $('#result').text(); 
+				$('#result').text(currentText + value);
+				console.log(currentText + value); 
+			}
+		</script>
 	</body>
 </html>

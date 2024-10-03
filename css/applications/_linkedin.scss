@@ -1,0 +1,110 @@
+#linkedin {
+	background-color: rgb(255, 255, 255);
+}
+
+#connexion {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 50px;
+	margin-top: 100px;
+
+	input {
+		padding: 10px 15px;
+		border: none;
+		background-color: unset;
+		border-bottom: 1px solid black;
+	}
+
+	button {
+		background-color: unset;
+		border: 1px solid black;
+		padding: 10px 15px;
+		cursor: pointer;
+		transition: all ease-in-out .2s;
+		color: black;
+
+		&:hover {
+			background-color: black;
+			color: white;
+		}
+	}
+
+	p {
+		font-style: italic;
+		color: rgb(12, 84, 167);
+		font-size: 13px;
+		cursor: pointer;
+		position: relative;
+		left: 0;
+		transition: all linear .2s;
+	}
+}
+
+#messageLinkedin {
+	position: absolute;
+	top: 55px;
+	right: -100%;
+	width: 100%;
+	height: calc(80% - 80px);
+	margin: 80px 0;
+	z-index: 2;
+	transition: all ease-in-out 0.5s;
+	background-color: rgb(255, 255, 255);
+}
+
+
+#linkedin1,
+#linkedin2 {
+	position: absolute;
+	top: 10px;
+	right: -100%;
+	width: calc(100% - 80px);
+	height: calc(92% - 40px);
+	padding: 20px 40px;
+	background-color: aliceblue;
+	z-index: 2;
+	transition: all ease-in-out 0.5s;
+}
+
+.apercuLinkedin {
+	padding: 15px 50px;
+	cursor: pointer;
+
+	p:first-child {
+		font-weight: 700;
+		padding-bottom: 5px;
+	}
+
+	p:last-child {
+		font-style: italic;
+	}
+
+	&:hover {
+		background-color: rgb(203, 209, 214);
+	}
+}
+
+.cant {
+	animation: cant 0.5s ease-in-out;
+}
+
+@keyframes cant {
+
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	25% {
+		transform: translateX(-5px);
+	}
+
+	50% {
+		transform: translateX(10px);
+	}
+
+	75% {
+		transform: translateX(-5px);
+	}
+}

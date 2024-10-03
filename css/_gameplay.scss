@@ -1,3 +1,7 @@
+//////////////////////////
+//// NOTIFICATION JEU ////
+//////////////////////////
+
 #evenementJeu {
     position: absolute;
     top: -30%;
@@ -16,6 +20,35 @@
 		padding: 10px 15px;
 		border-radius: 10px;
 		transition: all linear .3s;
+
+		p:first-child {
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+//////////////////////////
+//// NOTIFICATION TEL ////
+//////////////////////////
+
+#notifications {
+	position: absolute;
+	top: -140px;
+	width: 70%;
+	left: 15%;
+	height: 109px;
+
+	div {
+		position: absolute;
+		top: 0;
+		width: 90%;
+		border: 1px solid #A05542;
+		background-color: #d38d7c;
+		padding: 10px 15px;
+		border-radius: 10px;
+		transition: all linear .3s;
+		z-index: 2;
 
 		p:first-child {
 			font-size: 18px;

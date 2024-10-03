@@ -1,0 +1,82 @@
+///////////////
+//// GLOBAL ///
+///////////////
+
+#messages {
+	background-color: rgb(248, 225, 221);
+
+	#message1,
+	#message2 {
+		position: absolute;
+		top: 10px;
+		right: -100%;
+		width: calc(100% - 80px);
+		height: calc(92% - 40px);
+		padding: 20px 40px;
+		background-color: aliceblue;
+		z-index: 2;
+		transition: all ease-in-out 0.5s;
+	}
+}
+
+.apercuMessage {
+	padding: 15px 50px;
+	cursor: pointer;
+
+
+	p:first-child {
+		font-weight: 700;
+		padding-bottom: 5px;
+	}
+
+	p:last-child {
+		font-style: italic;
+	}
+
+	&:hover {
+		background-color: rgb(203, 209, 214);
+	}
+}
+
+//////////////
+//// MAIL ////
+//////////////
+
+#mail {
+	background-color: rgb(248, 225, 221);
+
+	#mail1,
+	#mail2 {
+		position: absolute;
+		top: 10px;
+		right: -100%;
+		width: calc(100% - 80px);
+		height: calc(92% - 40px);
+		padding: 20px 40px;
+		background-color: aliceblue;
+		z-index: 2;
+		transition: all ease-in-out 0.5s;
+	}
+}
+
+.apercuMail {
+	padding: 15px 50px;
+	cursor: pointer;
+
+	p:first-child {
+		font-weight: 700;
+		padding-bottom: 5px;
+	}
+
+	p:last-child {
+		font-style: italic;
+	}
+
+	&:hover {
+		background-color: rgb(203, 209, 214);
+	}
+}
+
+#calendrier {
+	padding: 0;
+}

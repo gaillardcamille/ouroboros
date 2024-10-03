@@ -105,7 +105,7 @@ body {
 #telephone > div:last-child .bandeau:first-of-type {
   top: -4px;
   height: 62px;
-  z-index: 40;
+  z-index: 39;
 }
 #telephone > div:last-child .bandeau:first-of-type img {
   position: relative;
@@ -147,14 +147,14 @@ body {
   padding: 65px 65px;
 }
 
-#iconsTelephone {
+.iconsTelephone {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: calc((100% - 270px) / 2);
        column-gap: calc((100% - 270px) / 2);
   row-gap: 40px;
 }
-#iconsTelephone > div {
+.iconsTelephone > div {
   position: relative;
   width: 90px;
   aspect-ratio: 1;
@@ -163,7 +163,7 @@ body {
   transform: scale(1);
   transition: all linear 0.2s;
 }
-#iconsTelephone > div span {
+.iconsTelephone > div span {
   position: absolute;
   right: -14px;
   top: -10px;
@@ -176,13 +176,13 @@ body {
   border-radius: 100%;
   color: white;
 }
-#iconsTelephone > div img {
+.iconsTelephone > div img {
   height: 100%;
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#iconsTelephone > div:hover {
+.iconsTelephone > div:hover {
   transform: scale(1.05);
 }
 
@@ -199,6 +199,145 @@ body {
 .application h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#debutJeu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  z-index: 99;
+  top: 0;
+  transition: all ease-out 0.7s;
+}
+#debutJeu div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+#debutJeu div p:last-child {
+  margin-top: 50px;
+  font-style: italic;
+}
+#debutJeu > p:last-child {
+  font-size: 15px;
+  font-style: italic;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#debutJeu h1 {
+  margin: 200px auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+#finJeu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  z-index: 98;
+  top: 100%;
+  transition: all ease-out 0.7s;
+}
+#finJeu button {
+  margin: 150px 10px 0;
+  padding: 20px 30px;
+  background-color: unset;
+  border: 1px solid;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+#finJeu button:first-child {
+  border-color: rgb(96, 199, 75);
+  color: rgb(96, 199, 75);
+}
+#finJeu button:first-child:hover {
+  background-color: rgb(96, 199, 75);
+  color: black;
+  padding: 20px 35px;
+}
+#finJeu button:last-child {
+  border-color: rgb(235, 114, 114);
+  color: rgb(235, 114, 114);
+}
+#finJeu button:last-child:hover {
+  background-color: rgb(235, 114, 114);
+  color: black;
+  padding: 20px 35px;
+}
+#finJeu p {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+#finJeu > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+  top: 85%;
+  transition: top linear 10s;
+}
+
+#endTheGame {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  padding: 20px 50px;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+}
+
+#maison {
+  background-image: url(../img/background/Fond_bureau.png);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#evenementJeu {
+  position: absolute;
+  top: -30%;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 300px;
+  z-index: 75;
+}
+#evenementJeu div {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  border: 1px solid #A05542;
+  background-color: #d38d7c;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all linear 0.3s;
+}
+#evenementJeu div p:first-child {
+  font-size: 18px;
+  margin-bottom: 5px;
 }
 
 #notifications {
@@ -253,6 +392,41 @@ body {
 }
 .apercuMessage:hover {
   background-color: rgb(203, 209, 214);
+}
+
+#mail {
+  background-color: rgb(248, 225, 221);
+}
+#mail #mail1,
+#mail #mail2 {
+  position: absolute;
+  top: 10px;
+  right: -100%;
+  width: calc(100% - 80px);
+  height: calc(92% - 40px);
+  padding: 20px 40px;
+  background-color: aliceblue;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+}
+
+.apercuMail {
+  padding: 15px 50px;
+  cursor: pointer;
+}
+.apercuMail p:first-child {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.apercuMail p:last-child {
+  font-style: italic;
+}
+.apercuMail:hover {
+  background-color: rgb(203, 209, 214);
+}
+
+#calendrier {
+  padding: 0;
 }
 
 #linkedin {
@@ -352,99 +526,101 @@ body {
     transform: translateX(-5px);
   }
 }
-#mail {
+#calculatrice {
   background-color: rgb(248, 225, 221);
 }
-#mail #mail1,
-#mail #mail2 {
+
+#calcul {
+  margin-top: 60px;
+}
+#calcul > div:first-child {
+  display: block;
+  width: 85%;
+  border: 1px solid rgba(0, 0, 0, 0.425);
+  height: 50px;
+  left: 7.5%;
+  position: relative;
+  background-color: white;
+  cursor: not-allowed;
+}
+#calcul > div:last-child {
+  display: flex;
+  margin-top: 40px;
+  padding: 0 7.5%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+#calcul > div:last-child input {
+  width: 100px;
+  height: 75px;
+  cursor: pointer;
+}
+#calcul > div:last-child #equal {
+  flex-grow: 2;
+}
+
+#zonePrive {
   position: absolute;
-  top: 10px;
+  padding: 130px 35px 92px;
+  height: calc(100% - 230px);
+  width: calc(100% - 70px);
   right: -100%;
-  width: calc(100% - 80px);
-  height: calc(92% - 40px);
-  padding: 20px 40px;
-  background-color: aliceblue;
-  z-index: 2;
+  top: 0;
+  background-image: url("../img/background/Fond_deverouille.png");
   transition: all ease-in-out 0.5s;
 }
 
-.apercuMail {
-  padding: 15px 50px;
-  cursor: pointer;
-}
-.apercuMail p:first-child {
-  font-weight: 700;
-  padding-bottom: 5px;
-}
-.apercuMail p:last-child {
-  font-style: italic;
-}
-.apercuMail:hover {
-  background-color: rgb(203, 209, 214);
-}
-
-main {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-#debutJeu {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  z-index: 99;
+#journal {
+  background-color: rgb(248, 225, 221);
   top: 0;
-  transition: all ease-out 0.7s;
 }
-#debutJeu div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-#debutJeu div p:last-child {
-  margin-top: 50px;
-  font-style: italic;
-}
-#debutJeu > p:last-child {
-  font-size: 15px;
-  font-style: italic;
+#journal .pageJournal {
   position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 13%;
+  right: -100%;
+  width: calc(100% - 112px);
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px 30px;
+  padding: 25px 25px;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+  border: 1px solid;
 }
-#debutJeu h1 {
-  margin: 200px auto;
+#journal .pageJournal:first-of-type {
+  right: 0;
+}
+#journal .pageJournal h3 {
   text-align: center;
-  font-size: 50px;
+  margin-bottom: 20px;
+}
+#journal .pageJournal p {
+  margin-bottom: 20px;
+}
+#journal .pageJournal button {
+  border: unset;
+  background-color: unset;
+  font-size: 30px;
+  right: 15px;
+  position: absolute;
+  bottom: 0px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+#journal .pageJournal button:hover {
+  right: 10px;
 }
 
-#evenementJeu {
-  position: absolute;
-  top: -30%;
-  width: 25%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 300px;
-  z-index: 75;
-}
-#evenementJeu div {
-  position: absolute;
+#messagePrive {
+  background-color: rgb(248, 225, 221);
   top: 0;
-  width: 90%;
-  border: 1px solid #A05542;
-  background-color: #d38d7c;
-  padding: 10px 15px;
-  border-radius: 10px;
-  transition: all linear 0.3s;
+  padding: 80px 30px;
+  width: calc(100% - 60px);
 }
-#evenementJeu div p:first-child {
-  font-size: 18px;
-  margin-bottom: 5px;
+
+#newMessage {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

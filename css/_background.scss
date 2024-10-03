@@ -43,3 +43,84 @@ main {
 		font-size: 50px;
 	}
 }
+
+#finJeu {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	color: white;
+	cursor: pointer;
+	z-index: 98;
+	top: 100%;
+	transition: all ease-out .7s;
+
+	button {
+		margin: 150px 10px 0;
+		padding: 20px 30px;
+		background-color: unset;
+		border: 1px solid;
+		font-size: 15px;
+		cursor: pointer;
+		transition: all linear .3s;
+
+		&:first-child {
+			border-color: rgb(96, 199, 75);
+			color: rgb(96, 199, 75);
+
+			&:hover {
+				background-color: rgb(96, 199, 75);
+				color: black;
+				padding: 20px 35px;
+			}
+		}
+
+		&:last-child {
+			border-color: rgb(235, 114, 114);
+			color: rgb(235, 114, 114);
+
+			&:hover {
+				background-color: rgb(235, 114, 114);
+				color: black;
+				padding: 20px 35px;
+			}
+		}
+	}
+
+	p {
+		margin-bottom: 50px;
+		font-size: 18px;
+	}
+
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		position: relative;
+		top: 85%;
+		transition: top linear 10s;
+	}
+}
+
+#endTheGame {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 20%;
+	padding: 20px 50px;
+	cursor: pointer;
+	display: none;
+	font-size: 20px;
+}
+
+#maison {
+	background-image: url(../img/background/Fond_bureau.png);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-position: center;
+	background-size: cover;
+}
