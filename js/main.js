@@ -6,7 +6,9 @@ $(document).ready(function () {
 	var message2Opened = false;
 
 	var nombreLinkedin = 2;
-	var linkedinOpened = false;
+	var linkedin1Opened = false;
+	var linkedin2Opened = false;
+	var connectedLinkedin = false;
 
 	var nombreMail = 0;
 	var mailOpened = false;
@@ -79,6 +81,11 @@ $(document).ready(function () {
 	// Linkedin
 	$("#ouvrirLinkedin").on("click", function () {
 		$("#linkedin").css("right", "0")
+
+		if (connectedLinkedin) {
+			$("#messageLinkedin").css("right", "0")
+		}
+		
 	});
 
 	$("#forgetPassword").on("click", function () {
@@ -93,14 +100,15 @@ $(document).ready(function () {
 
 		if (!sendingForgetPassword) {
 			sendingForgetPassword = true
-			$("#notifGmail").css("top", "160%")
+			$("#notifMail").css("top", "160%")
+			$("#ouvrirMail1").css("display", "block")
 	
 			nombreMail += 1;
 			$("#nombreMail").text(nombreMail);
 			updateNotificationDisplay();
 			
 			setTimeout(function() {
-				$("#notifGmail").css("top", "0");
+				$("#notifMail").css("top", "0");
 			}, 4000);
 		}
 	});
@@ -112,13 +120,76 @@ $(document).ready(function () {
 		var validUsername = "Simon.Rernard";
 		var validPassword = "S!m0N_rd";
 	
-		if (!sendingForgetPassword || username === "" || password === "" || username !== validUsername || password !== validPassword) {
+		if (username === "" || password === "" || username !== validUsername || password !== validPassword) {
 			$("#connexionButton").addClass("cant");
 
             setTimeout(function() {
                 $("#connexionButton").removeClass("cant");
             }, 500);
 		}
+		else {
+			connectedLinkedin = true
+			$("#messageLinkedin").css("right", "0")
+		}
+	});
+
+	$("#ouvrirLinkedin1").on("click", function () {
+		$("#linkedin1").css("right", "0")
+
+		if (!linkedin1Opened) { 
+			nombreLinkedin -= 1;
+
+			$("#nombreLinkedin").text(nombreLinkedin);
+			updateNotificationDisplay();
+			linkedin1Opened = true;
+		}
+	});
+
+	$("#ouvrirLinkedin2").on("click", function () {
+		$("#linkedin2").css("right", "0")
+
+		if (!linkedin2Opened) { 
+			nombreLinkedin -= 1;
+
+			$("#nombreLinkedin").text(nombreLinkedin);
+			updateNotificationDisplay();
+			linkedin2Opened = true;
+
+			$("#lieuBureau").css("top", "120%")
+	
+			
+			setTimeout(function() {
+				$("#lieuBureau").css("top", "0");
+			}, 4000);
+		}
+	});
+
+	/////////////////////////////////////////////////////////////////////////////
+	/////////////////////////////////////////////////////////////////////////////
+	
+	// Mails
+	$("#ouvrirMail").on("click", function () {
+		$("#mail").css("right", "0")
+
+		if(!sendingForgetPassword) {
+			$("#ouvrirMail1").css("display", "none")
+		}
+	});
+
+	$("#ouvrirMail1").on("click", function () {
+		$("#mail1").css("right", "0")
+
+		if (!mailOpened) { 
+			nombreMail -= 1;
+
+			$("#nombreMail").text(nombreMail);
+			updateNotificationDisplay();
+			mailOpened = true;
+		}
+	});
+
+	$("#ouvrirMail2").on("click", function () {
+		$("#mail2").css("right", "0")
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -132,6 +203,12 @@ $(document).ready(function () {
 		$("#message2").css("right", "-100%")
 
 		$("#linkedin").css("right", "-100%")
+		$("#linkedin1").css("right", "-100%")
+		$("#linkedin2").css("right", "-100%")
+
+		$("#mail").css("right", "-100%")
+		$("#mail1").css("right", "-100%")
+		$("#mail2").css("right", "-100%")
 	});
 
 	/////////////////////////////////////////////////////////////////////////////

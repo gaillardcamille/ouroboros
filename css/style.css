@@ -240,18 +240,18 @@ body {
   transition: all ease-in-out 0.5s;
 }
 
-.apercu {
+.apercuMessage {
   padding: 15px 50px;
   cursor: pointer;
 }
-.apercu p:first-child {
+.apercuMessage p:first-child {
   font-weight: 700;
   padding-bottom: 5px;
 }
-.apercu p:last-child {
+.apercuMessage p:last-child {
   font-style: italic;
 }
-.apercu:hover {
+.apercuMessage:hover {
   background-color: rgb(203, 209, 214);
 }
 
@@ -293,9 +293,51 @@ body {
   left: 0;
   transition: all linear 0.2s;
 }
-#connexion .cant {
+
+#messageLinkedin {
+  position: absolute;
+  top: 55px;
+  right: -100%;
+  width: 100%;
+  height: calc(80% - 80px);
+  margin: 80px 0;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+  background-color: rgb(255, 255, 255);
+}
+
+#linkedin1,
+#linkedin2 {
+  position: absolute;
+  top: 10px;
+  right: -100%;
+  width: calc(100% - 80px);
+  height: calc(92% - 40px);
+  padding: 20px 40px;
+  background-color: aliceblue;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+}
+
+.apercuLinkedin {
+  padding: 15px 50px;
+  cursor: pointer;
+}
+.apercuLinkedin p:first-child {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.apercuLinkedin p:last-child {
+  font-style: italic;
+}
+.apercuLinkedin:hover {
+  background-color: rgb(203, 209, 214);
+}
+
+.cant {
   animation: cant 0.5s ease-in-out;
 }
+
 @keyframes cant {
   0%, 100% {
     transform: translateX(0);
@@ -309,6 +351,36 @@ body {
   75% {
     transform: translateX(-5px);
   }
+}
+#mail {
+  background-color: rgb(248, 225, 221);
+}
+#mail #mail1,
+#mail #mail2 {
+  position: absolute;
+  top: 10px;
+  right: -100%;
+  width: calc(100% - 80px);
+  height: calc(92% - 40px);
+  padding: 20px 40px;
+  background-color: aliceblue;
+  z-index: 2;
+  transition: all ease-in-out 0.5s;
+}
+
+.apercuMail {
+  padding: 15px 50px;
+  cursor: pointer;
+}
+.apercuMail p:first-child {
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+.apercuMail p:last-child {
+  font-style: italic;
+}
+.apercuMail:hover {
+  background-color: rgb(203, 209, 214);
 }
 
 main {
@@ -351,4 +423,28 @@ main {
   margin: 200px auto;
   text-align: center;
   font-size: 50px;
+}
+
+#evenementJeu {
+  position: absolute;
+  top: -30%;
+  width: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 300px;
+  z-index: 75;
+}
+#evenementJeu div {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  border: 1px solid #A05542;
+  background-color: #d38d7c;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: all linear 0.3s;
+}
+#evenementJeu div p:first-child {
+  font-size: 18px;
+  margin-bottom: 5px;
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,25 @@
+#evenementJeu {
+    position: absolute;
+    top: -30%;
+    width: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 300px;
+    z-index: 75;
+
+	div {
+		position: absolute;
+		top: 0;
+		width: 90%;
+		border: 1px solid #A05542;
+		background-color: #d38d7c;
+		padding: 10px 15px;
+		border-radius: 10px;
+		transition: all linear .3s;
+
+		p:first-child {
+			font-size: 18px;
+			margin-bottom: 5px;
+		}
+	}
+}
