@@ -198,6 +198,18 @@ $(document).ready(function () {
 		$("#mail2").css("right", "0")
 	});
 
+	$("#ouvrirMail3").on("click", function () {
+		$("#mail3").css("right", "0")
+	});
+
+	$("#ouvrirMail4").on("click", function () {
+		$("#mail4").css("right", "0")
+	});
+
+	$("#ouvrirMail5").on("click", function () {
+		$("#mail5").css("right", "0")
+	});
+
 	/////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////
 	
@@ -290,8 +302,7 @@ $(document).ready(function () {
 		$("#linkedin2").css("right", "-100%")
 
 		$("#mail").css("right", "-100%")
-		$("#mail1").css("right", "-100%")
-		$("#mail2").css("right", "-100%")
+		$(".mail").css("right", "-100%")
 
 		$("#calculatrice").css("right", "-100%")
 		$("#journal").css("right", "-100%")
