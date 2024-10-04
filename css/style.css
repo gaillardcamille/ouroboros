@@ -371,7 +371,7 @@ main {
   bottom: 70px;
   left: 0;
   width: 100%;
-  background: rgba(255, 255, 255, 0.774);
+  background: rgba(255, 255, 255, 0.7);
   display: none;
   z-index: 3;
   margin: 0;
@@ -444,23 +444,23 @@ main {
 }
 
 #messages {
-  background-color: rgb(248, 225, 221);
+  background-color: var(--villa);
 }
 #messages .discussion {
-  background-color: rgb(248, 225, 221);
+  background-color: var(--villa);
   height: 80%;
 }
 #messages .discussion .other {
   background-color: var(--white-color);
 }
 #messages .discussion .date {
-  color: #917f92;
+  color: var(--magenta);
 }
 #messages .discussion::before {
-  background: linear-gradient(180deg, rgb(248, 225, 221) 0%, rgba(248, 225, 221, 0) 100%);
+  background: linear-gradient(180deg, var(--villa) 0%, rgba(248, 225, 221, 0) 100%);
 }
 #messages .discussion::after {
-  background: linear-gradient(0deg, rgb(248, 225, 221) 0%, rgba(248, 225, 221, 0) 100%);
+  background: linear-gradient(0deg, var(--villa) 0%, rgba(248, 225, 221, 0) 100%);
 }
 
 .message {
@@ -468,13 +468,13 @@ main {
   top: 70px;
   right: -100%;
   height: calc(92% - 40px);
-  background-color: rgb(248, 225, 221);
+  background-color: var(--villa);
   z-index: 2;
   transition: all ease-in-out 0.5s;
   width: 100%;
 }
 .message .numeroContact {
-  color: #917f92;
+  color: var(--magenta);
   text-align: center;
   margin-bottom: 30px;
   font-size: 20px;
@@ -568,10 +568,10 @@ main {
   color: var(--white-color);
 }
 #connexion input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.767);
+  color: rgba(255, 255, 255, 0.7);
 }
 #connexion input::placeholder {
-  color: rgba(255, 255, 255, 0.767);
+  color: rgba(255, 255, 255, 0.7);
 }
 #connexion input:focus-visible {
   outline: unset;
@@ -650,7 +650,7 @@ main {
   bottom: 0px;
   height: 28%;
   width: 100%;
-  background-color: #73AABA;
+  background-color: var(--voyage);
 }
 
 #ouvrirLinkedin1 {
@@ -661,7 +661,7 @@ main {
   padding: 15px 20px 18px 20px;
   margin: 20px 0;
   cursor: pointer;
-  background-color: #73AABA;
+  background-color: var(--voyage);
   border-radius: 10px;
   transition: all linear 0.15s;
 }
@@ -674,7 +674,7 @@ main {
   color: var(--bleu-nocturne);
 }
 .apercuLinkedin:hover {
-  background-color: rgb(255, 255, 255);
+  background-color: var(--white-color);
 }
 
 .cant {
@@ -897,10 +897,10 @@ main {
   background-color: unset;
 }
 #messagePrive .discussion::before {
-  background: linear-gradient(180deg, rgb(68, 68, 66) 0%, rgba(133, 132, 127, 0) 100%);
+  background: linear-gradient(180deg, var(--broadway) 0%, rgba(133, 132, 127, 0) 100%);
 }
 #messagePrive .discussion::after {
-  background: linear-gradient(0deg, rgb(133, 132, 127) 0%, rgba(133, 132, 127, 0) 100%);
+  background: linear-gradient(0deg, var(--gris) 0%, rgba(133, 132, 127, 0) 100%);
 }
 #messagePrive::after {
   content: "";
@@ -1080,7 +1080,7 @@ main {
 }
 
 .discussion {
-  background-color: #73AABA;
+  background-color: var(--voyage);
   height: 100%;
   overflow-x: auto;
   position: relative;
@@ -1115,7 +1115,7 @@ main {
   top: 0;
   height: 10px;
   width: 100%;
-  background: linear-gradient(180deg, rgb(50, 76, 89) 0%, rgba(115, 170, 186, 0) 100%);
+  background: linear-gradient(180deg, var(--bleu-nocturne) 0%, rgba(117, 155, 166, 0) 100%);
 }
 .discussion::after {
   content: "";
@@ -1125,7 +1125,7 @@ main {
   bottom: 0;
   height: 10px;
   width: 100%;
-  background: linear-gradient(0deg, rgb(115, 170, 186) 0%, rgba(115, 170, 186, 0) 100%);
+  background: linear-gradient(0deg, var(--voyage) 0%, rgba(117, 155, 166, 0) 100%);
 }
 
 #calendrier {

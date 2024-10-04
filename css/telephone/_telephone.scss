@@ -171,7 +171,7 @@
 
 .discussion {
 	// C'est le style de Linkedin mais il s'agit de la forme de tous les messages
-	background-color: #73AABA;
+	background-color: var(--voyage);
 	
 	height: 100%;
 	overflow-x: auto;
@@ -210,7 +210,7 @@
 		top: 0;
 		height: 10px;
 		width: 100%;
-		background: linear-gradient(180deg, rgba(50,76,89,1) 0%, rgba(115,170,186,0) 100%);
+		background: linear-gradient(180deg, var(--bleu-nocturne) 0%, rgba(117, 155, 166, 0) 100%);
 	}
 
 	&::after {
@@ -221,7 +221,7 @@
 		bottom: 0;
 		height: 10px;
 		width: 100%;
-		background: linear-gradient(0deg, rgba(115,170,186,1) 0%, rgba(115,170,186,0) 100%);
+		background: linear-gradient(0deg, var(--voyage) 0%, rgba(117, 155, 166,0) 100%);
 	}
 }
 

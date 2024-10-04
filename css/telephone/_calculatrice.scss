@@ -232,11 +232,11 @@
 		}
 	
 		&::before {
-			background: linear-gradient(180deg, rgba(68, 68, 66,1) 0%, rgba(133, 132, 127, 0) 100%);
+			background: linear-gradient(180deg, var(--broadway) 0%, rgba(133, 132, 127, 0) 100%);
 		}
 	
 		&::after {
-			background: linear-gradient(0deg, rgba(133, 132, 127, 1) 0%, rgba(133, 132, 127, 0) 100%);
+			background: linear-gradient(0deg, var(--gris) 0%, rgba(133, 132, 127, 0) 100%);
 		}
 	}
 
