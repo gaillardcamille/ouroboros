@@ -120,6 +120,19 @@
 	}
 }
 
+#taille_insuffisante {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: var(--black-color);
+	color: var(--white-color);
+	z-index: 98;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
 #finJeu {
 	position: absolute;
 	height: 100%;
@@ -191,6 +204,12 @@
 	background-size: cover;
 	right: 0;
 	transition: right ease-in-out .5s;
+}
+
+@media screen and (max-width: 1915px), screen and (max-height: 1075px) {
+	#taille_insuffisante {
+		display: flex;
+	}
 }
 
 //////////////////////////
