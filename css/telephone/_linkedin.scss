@@ -54,6 +54,10 @@
 	}
 }
 
+////////////////
+//// MESSAGE ///
+////////////////
+
 #messageLinkedin {
 	position: absolute;
 	top: 55px;
@@ -68,61 +72,6 @@
 	
 	h3 {
 		color: white;
-	}
-}
-
-.discussion {
-	background-color: #73AABA;
-	
-	height: 100%;
-	overflow-x: auto;
-	position: relative;
-
-	span {
-		display: block;
-		color: #A05542;
-		margin-bottom: 10px;
-	}
-	p {
-		background-color: #A3C8CF;
-		text-align: end;
-		padding: 15px 25px;
-		margin: 20px 20px;
-		margin: 20px 20px;
-		border-radius: 7px;
-	}
-
-	.other {
-		background-color: #CBE2E7;
-		text-align: left;
-	}
-
-	.date {
-		background-color: unset;
-		text-align: center;
-		color: #324C59;
-	}
-
-	&::before {
-		content: "";
-		display: block;
-		position: sticky;
-		left: 0;
-		top: 0;
-		height: 10px;
-		width: 100%;
-		background: linear-gradient(180deg, rgba(50,76,89,1) 0%, rgba(115,170,186,0) 100%);
-	}
-
-	&::after {
-		content: "";
-		display: block;
-		position: sticky;
-		left: 0;
-		bottom: 0;
-		height: 10px;
-		width: 100%;
-		background: linear-gradient(0deg, rgba(115,170,186,1) 0%, rgba(115,170,186,0) 100%);
 	}
 }
 
@@ -197,6 +146,10 @@
 		background-color: rgb(255, 255, 255);
 	}
 }
+
+///////////////////////////////
+//// ANIMATION DE CONNEXION ///
+///////////////////////////////
 
 .cant {
 	animation: cant 0.5s ease-in-out;

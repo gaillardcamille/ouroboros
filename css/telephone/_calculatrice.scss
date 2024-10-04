@@ -73,6 +73,10 @@
 	}
 }
 
+////////////////
+//// JOURNAL ///
+////////////////
+
 #journal {
 	background-color: #7E566E;
 	top: 0;
@@ -96,71 +100,71 @@
 			}
 		}
 	}
+}
 
-	.pageJournal {
-		position: absolute;
-		top: 15%;
-		right: -100%;
-		width: calc(100% - 60px);
-    height: fit-content;
-    margin: 10px 30px;
-    padding: 25px 0px;
-		z-index: 2;
-		transition: all ease-in-out 0.5s;
+.pageJournal {
+	position: absolute;
+	top: 15%;
+	right: -100%;
+	width: calc(100% - 60px);
+	height: fit-content;
+	margin: 10px 30px;
+	padding: 25px 0px;
+	z-index: 2;
+	transition: all ease-in-out 0.5s;
 
-		&:first-of-type {
-			right: 0;
+	&:first-of-type {
+		right: 0;
+	}
+
+	h3 {
+		text-align: center;
+		margin-bottom: 20px;
+		font-size: 25px;
+	}
+
+	p {
+		margin-bottom: 20px;
+		background-color: #D9D9D9;
+		padding: 20px 30px;
+	}
+
+	span {
+		background-color: #C49B85;
+		display: block;
+		padding: 15px 25px;
+	}
+}
+
+.nextPage, .prevPage {
+	border: unset;
+	background-color: unset;
+	font-size: 30px;
+	position: absolute;
+	top: 25px;
+	cursor: pointer;
+	transition: all linear .2s;
+
+	&.nextPage {
+		right: 15px;
+
+		&:hover {
+			right: 10px;
 		}
+	}
 
-		h3 {
-			text-align: center;
-			margin-bottom: 20px;
-			font-size: 25px;
-		}
+	&.prevPage {
+		left: 15px;
 
-		p {
-			margin-bottom: 20px;
-			background-color: #D9D9D9;
-			padding: 20px 30px;
-		}
-
-		span {
-			background-color: #C49B85;
-			display: block;
-			padding: 15px 25px;
-		}
-
-		.nextPage {
-			border: unset;
-			background-color: unset;
-			font-size: 30px;
-			right: 15px;
-			position: absolute;
-			top: 25px;
-			cursor: pointer;
-			transition: all linear .2s;
-
-			&:hover {
-				right: 10px;
-			}
-		}
-
-		.prevPage {
-			border: unset;
-			background-color: unset;
-			font-size: 30px;
-			left: 15px;
-			position: absolute;
-			top: 25px;
-			cursor: pointer;
-			transition: all linear .2s;
-
-			&:hover {
-				left: 10px;
-			}
+		&:hover {
+			left: 10px;
 		}
 	}
 }
+
+////////////////////
+//// MESSAGES PV ///
+////////////////////
 
 #messagePrive {
 	background-color: #444442;

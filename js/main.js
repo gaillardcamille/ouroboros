@@ -1,6 +1,9 @@
 $(document).ready(function () {
+	
+	/////////////////////////
+	////    VARIABLES    ////
+	/////////////////////////
 
-	// Variables
 	var nombreMessage = 15;
 	var message1Opened = false;
 	var message2Opened = false;
@@ -23,9 +26,26 @@ $(document).ready(function () {
 	updateNotificationDisplay();
 
 	/////////////////////////////////////////////////////////////////////////////
+	
+	/////////////////////////
+	////    FONCTIONS    ////
+	/////////////////////////
+
+	function updateNotificationDisplay() {
+		$('.notificationNumber').each(function() {
+			if ($(this).text().trim() === '' || $(this).text().trim() === '0') {
+				$(this).css('display', 'none');
+			} else {
+				$(this).css('display', 'flex');
+			}
+		});
+	}
+
 	/////////////////////////////////////////////////////////////////////////////
 	
-	// Page d'accueil du téléphone
+	/////////////////////////
+	////    TELEPHONE    ////
+	/////////////////////////
 
 	$("#debutJeu").on("click", function () {
 		$("#debutJeu").css("top", "-100%")
@@ -45,11 +65,31 @@ $(document).ready(function () {
 		$("#verouillageTelephone").css("top", "-100%")
 	});
 
+	$("#homeTelephone").on("click", function () {
+		$("#messages").css("right", "-100%")
+		$("#message1").css("right", "-100%")
+		$("#message2").css("right", "-100%")
+
+		$("#linkedin").css("right", "-100%")
+		$("#linkedin1").css("right", "-100%")
+		$("#linkedin2").css("right", "-100%")
+
+		$("#mail").css("right", "-100%")
+		$(".mail").css("right", "-100%")
+
+		$("#calculatrice").css("right", "-100%")
+		$("#journal").css("right", "-100%")
+		$(".pageJournal").css("right", "-100%")
+		$("#messagePrive").css("right", "-100%")
+		$("#calendrier").css("right", "-100%")
+	});
 
 	/////////////////////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////
 	
-	// Messages
+	//////////////////////////
+	////     MESSAGES     ////
+	//////////////////////////
+	
 	$("#ouvrirMessages").on("click", function () {
 		$("#messages").css("right", "0")
 	});
@@ -87,9 +127,11 @@ $(document).ready(function () {
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////
 	
-	// Linkedin
+	//////////////////////////
+	////     LINKEDIN     ////
+	//////////////////////////
+
 	$("#ouvrirLinkedin").on("click", function () {
 		$("#linkedin").css("right", "0")
 
@@ -174,18 +216,21 @@ $(document).ready(function () {
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////
 	
-	// Calendrier
+	//////////////////////////
+	////    CALENDRIER    ////
+	//////////////////////////
 
 	$("#ouvrirCalendrier").on("click", function () {
 		$("#calendrier").css("right", "0")
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////
 	
-	// Mails
+	///////////////////////////
+	////       MAILS       ////
+	///////////////////////////
+
 	$("#ouvrirMail").on("click", function () {
 		$("#mail").css("right", "0")
 
@@ -227,9 +272,10 @@ $(document).ready(function () {
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////
 	
-	// Calculatrice
+	//////////////////////////
+	////   CALCULATRICE   ////
+	//////////////////////////
 
 	$("#ouvrirCalculatrice").on("click", function () {
 		$("#calculatrice").css("right", "0")
@@ -324,52 +370,30 @@ $(document).ready(function () {
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
+	
+	///////////////////////////
+	////  LIEU CHANGEMENT  ////
+	///////////////////////////
+
+	$("#goToDesk").on("click", function () {
+		$("#maison").css("right", "100%")
+		$("#bureau").css("right", "0%")
+		$("#goToHome").css("display", "block")
+		$("#goToDesk").css("display", "none")
+	})
+
+	$("#goToHome").on("click", function () {
+		$("#maison").css("right", "0")
+		$("#bureau").css("right", "-100%")
+		$("#goToHome").css("display", "none")
+		$("#goToDesk").css("display", "block")
+	})
+
 	/////////////////////////////////////////////////////////////////////////////
 	
-	// Home
-
-	$("#homeTelephone").on("click", function () {
-		$("#messages").css("right", "-100%")
-		$("#message1").css("right", "-100%")
-		$("#message2").css("right", "-100%")
-
-		$("#linkedin").css("right", "-100%")
-		$("#linkedin1").css("right", "-100%")
-		$("#linkedin2").css("right", "-100%")
-
-		$("#mail").css("right", "-100%")
-		$(".mail").css("right", "-100%")
-
-		$("#calculatrice").css("right", "-100%")
-		$("#journal").css("right", "-100%")
-		$(".pageJournal").css("right", "-100%")
-		$("#messagePrive").css("right", "-100%")
-		$("#calendrier").css("right", "-100%")
-	});
-
-	/////////////////////////////////////////////////////////////////////////////
-	/////////////////////////////////////////////////////////////////////////////
-	
-	// Fonctions
-
-	function updateNotificationDisplay() {
-		$('.notificationNumber').each(function() {
-			if ($(this).text().trim() === '' || $(this).text().trim() === '0') {
-				$(this).css('display', 'none');
-			} else {
-				$(this).css('display', 'flex');
-			}
-		});
-	}
-
-
-
-
-
-
-
-
-
+	//////////////////////////
+	////    FIN DE JEU    ////
+	//////////////////////////
 
 	$("#endTheGame").on("click", function () {
 		$("#finJeu").css("top", "0")
@@ -384,17 +408,4 @@ $(document).ready(function () {
 		$("#finJeu div:first-child").css("top", "-100%")
 		$("#finJeu div:last-child").css("top", "-100%")
 	});
-
-	$("#goToDesk").on("click", function () {
-		$("#maison").css("right", "100%")
-		$("#bureau").css("right", "0%")
-		$("#goToHome").css("display", "block")
-		$("#goToDesk").css("display", "none")
-	})
-	$("#goToHome").on("click", function () {
-		$("#maison").css("right", "0")
-		$("#bureau").css("right", "-100%")
-		$("#goToHome").css("display", "none")
-		$("#goToDesk").css("display", "block")
-	})
 });
