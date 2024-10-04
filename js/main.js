@@ -21,8 +21,11 @@ $(document).ready(function () {
 	var nombreMessagePrive = 0;
 	var lastMessageOpened = false;
 
+	var nombreIndice = 6;
+
 	$("#nombreMessage").text(nombreMessage);
 	$("#nombreLinkedin").text(nombreLinkedin);
+	$("#nombreIndice").text(nombreIndice);
 	updateNotificationDisplay();
 
 	/////////////////////////////////////////////////////////////////////////////

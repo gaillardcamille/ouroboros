@@ -19,106 +19,6 @@ main {
   width: 100%;
 }
 
-#debutJeu {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  z-index: 99;
-  top: 0;
-  transition: all ease-out 0.7s;
-}
-#debutJeu div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 20px;
-}
-#debutJeu div p:last-child {
-  margin-top: 50px;
-  font-style: italic;
-}
-#debutJeu > p:last-child {
-  font-size: 15px;
-  font-style: italic;
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-#debutJeu h1 {
-  margin: 200px auto;
-  text-align: center;
-  font-size: 50px;
-}
-
-#finJeu {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  color: white;
-  cursor: pointer;
-  z-index: 98;
-  top: 100%;
-  transition: all ease-out 0.7s;
-}
-#finJeu button {
-  margin: 150px 10px 0;
-  padding: 20px 30px;
-  background-color: unset;
-  border: 1px solid;
-  font-size: 15px;
-  cursor: pointer;
-  transition: all linear 0.3s;
-}
-#finJeu button:first-child {
-  border-color: rgb(96, 199, 75);
-  color: rgb(96, 199, 75);
-}
-#finJeu button:first-child:hover {
-  background-color: rgb(96, 199, 75);
-  color: black;
-  padding: 20px 35px;
-}
-#finJeu button:last-child {
-  border-color: rgb(235, 114, 114);
-  color: rgb(235, 114, 114);
-}
-#finJeu button:last-child:hover {
-  background-color: rgb(235, 114, 114);
-  color: black;
-  padding: 20px 35px;
-}
-#finJeu p {
-  margin-bottom: 50px;
-  font-size: 18px;
-}
-#finJeu > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  position: relative;
-  top: 85%;
-  transition: top linear 10s;
-}
-
-#maison {
-  background-image: url(../img/background/Fond_maison.png);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  right: 0;
-  transition: right ease-in-out 0.5s;
-}
-
 #evenementJeu {
   position: absolute;
   top: -30%;
@@ -399,12 +299,9 @@ main {
 }
 
 #bureau {
-  background-image: url(../img/background/Fond_bureau.png);
   position: absolute;
   height: 100%;
   width: 100%;
-  background-position: center;
-  background-size: cover;
   right: -100%;
   transition: right ease-in-out 0.5s;
 }
@@ -413,6 +310,14 @@ main {
   font-size: 2rem;
   line-height: 1.4;
   padding: 20px;
+}
+
+#backgroundBureau {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .character {
