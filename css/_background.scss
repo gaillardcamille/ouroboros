@@ -105,17 +105,6 @@ main {
 	}
 }
 
-#endTheGame {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 20%;
-	padding: 20px 50px;
-	cursor: pointer;
-	display: none;
-	font-size: 20px;
-}
-
 #maison {
 	background-image: url(../img/background/Fond_maison.png);
 	position: absolute;

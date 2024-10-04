@@ -1,5 +1,9 @@
 #calculatrice {
-	background-color: rgb(248, 225, 221);
+	background-color: #5D6C59;
+
+	h2 {
+		color: #E9D5CC;
+	}
 }
 
 #calcul {
@@ -8,14 +12,16 @@
 	>div:first-child {
 		display: block;
 		width: calc(85% - 10px);
-		border: 1px solid rgba(0, 0, 0, 0.425);
+		border: 2px solid #E9D5CC;
 		height: 50px;
 		left: 7.5%;
 		position: relative;
-		background-color: white;
+		background-color: unset;
 		cursor: not-allowed;
 		align-content: center;
 		padding-left: 10px;
+		color: #E9D5CC;
+		font-size: 40px;
 	}
 
 	>div:last-child {
@@ -31,6 +37,19 @@
 			width: 100px;
 			height: 75px;
 			cursor: pointer;
+			background-color: #E9D5CC;
+			color: #5D6C59;
+			font-size: 40px;
+			border: none;
+			position: relative;
+			box-shadow: 0px 4px 6px -3px black;
+			top: 0;
+			transition: all linear .2s;
+
+			&:focus {
+				top: 1px;
+				box-shadow: unset;
+			}
 		}
 
 		#equal {

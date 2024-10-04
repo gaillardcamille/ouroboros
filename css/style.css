@@ -108,17 +108,6 @@ main {
   transition: top linear 10s;
 }
 
-#endTheGame {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  top: 20%;
-  padding: 20px 50px;
-  cursor: pointer;
-  display: none;
-  font-size: 20px;
-}
-
 #maison {
   background-image: url(../img/background/Fond_maison.png);
   position: absolute;
@@ -143,38 +132,55 @@ main {
   position: absolute;
   top: 0;
   width: 90%;
-  border: 1px solid #A05542;
-  background-color: #d38d7c;
+  border: 3px solid #257581;
+  background-color: #759BA6;
   padding: 10px 15px;
   border-radius: 10px;
   transition: all linear 0.3s;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-#evenementJeu div p:first-child {
-  font-size: 18px;
+#evenementJeu div h5 {
+  font-size: 25px;
   margin-bottom: 5px;
+}
+#evenementJeu div p {
+  font-size: 23px;
+  text-align: center;
 }
 
 #notifications {
   position: absolute;
   top: -140px;
-  width: 70%;
-  left: 15%;
+  width: 80%;
+  left: 10%;
   height: 109px;
 }
 #notifications div {
   position: absolute;
   top: 0;
   width: 90%;
-  border: 1px solid #A05542;
-  background-color: #d38d7c;
+  border: 3px solid #257581;
+  background-color: #759BA6;
   padding: 10px 15px;
-  border-radius: 10px;
+  border-radius: 7px;
   transition: all linear 0.3s;
   z-index: 2;
+  color: white;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 #notifications div p:first-child {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 5px;
+}
+#notifications div p:last-child {
+  font-size: 18px;
 }
 
 #barre_navigation {
@@ -275,6 +281,21 @@ main {
 }
 #goToHome:hover::after, #goToDesk:hover::after {
   width: 100%;
+}
+
+#endTheGame {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  padding: 30px 60px;
+  cursor: pointer;
+  display: none;
+  font-size: 40px;
+  border: 5px solid #257581;
+  background-color: #759BA6;
+  color: white;
+  border-radius: 5px;
 }
 
 #bureau {
@@ -461,7 +482,7 @@ main {
   position: absolute;
   top: 75px;
   font-size: 40px;
-  color: white;
+  color: #E8E5DC;
   cursor: pointer;
 }
 
@@ -481,10 +502,6 @@ main {
 }
 .apercuMail:hover {
   background-color: #caab9f;
-}
-
-#calendrier {
-  padding: 0;
 }
 
 #linkedin {
@@ -686,7 +703,10 @@ main {
   }
 }
 #calculatrice {
-  background-color: rgb(248, 225, 221);
+  background-color: #5D6C59;
+}
+#calculatrice h2 {
+  color: #E9D5CC;
 }
 
 #calcul {
@@ -695,14 +715,16 @@ main {
 #calcul > div:first-child {
   display: block;
   width: calc(85% - 10px);
-  border: 1px solid rgba(0, 0, 0, 0.425);
+  border: 2px solid #E9D5CC;
   height: 50px;
   left: 7.5%;
   position: relative;
-  background-color: white;
+  background-color: unset;
   cursor: not-allowed;
   align-content: center;
   padding-left: 10px;
+  color: #E9D5CC;
+  font-size: 40px;
 }
 #calcul > div:last-child {
   display: flex;
@@ -718,6 +740,18 @@ main {
   width: 100px;
   height: 75px;
   cursor: pointer;
+  background-color: #E9D5CC;
+  color: #5D6C59;
+  font-size: 40px;
+  border: none;
+  position: relative;
+  box-shadow: 0px 4px 6px -3px black;
+  top: 0;
+  transition: all linear 0.2s;
+}
+#calcul > div:last-child input:focus {
+  top: 1px;
+  box-shadow: unset;
 }
 #calcul > div:last-child #equal {
   flex-grow: 2;
@@ -1049,4 +1083,8 @@ main {
 .application h2 {
   text-align: center;
   margin-bottom: 20px;
+}
+
+#calendrier {
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */

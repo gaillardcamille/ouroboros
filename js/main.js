@@ -124,7 +124,7 @@ $(document).ready(function () {
 		var username = $("#user").val();
 		var password = $("#password").val();
 	
-		var validUsername = "Simon.Rernard";
+		var validUsername = "Simon.Renard";
 		var validPassword = "S!m0N_rd";
 	
 		if (!sendingForgetPassword || username === "" || password === "" || username !== validUsername || password !== validPassword) {
@@ -155,7 +155,7 @@ $(document).ready(function () {
 	
 			setTimeout(function() {
 				$("#lieuBureau").css("top", "0");
-			}, 4000);
+			}, 8000);
 
 			$("#goToDesk").css("display", "block")
 		}
@@ -304,7 +304,7 @@ $(document).ready(function () {
 			
 			setTimeout(function() {
 				$("#finNotif").css("top", "0");
-			}, 4000);
+			}, 8000);
 
 			$("#endTheGame").css("display", "block")
 		}
