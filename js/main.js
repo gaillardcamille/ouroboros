@@ -78,6 +78,10 @@ $(document).ready(function () {
 		}
 	});
 
+	$("#ouvrirMessage3").on("click", function () {
+		$("#message3").css("right", "0")
+	});
+
 	$(".message i").on("click", function () {
 		$(this).closest('.message').css("right", "-100%");
 	});
