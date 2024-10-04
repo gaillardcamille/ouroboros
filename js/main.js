@@ -7,13 +7,15 @@ $(document).ready(function () {
 	var nombreMessage = 15;
 	var message1Opened = false;
 	var message2Opened = false;
+	var message3Opened = false;
 
 	var nombreLinkedin = 1;
 	var linkedin1Opened = false;
 	var connectedLinkedin = false;
 
 	var nombreMail = 0;
-	var mailOpened = false;
+	var mail1Opened = false;
+	var mail2Opened = false;
 	var sendingForgetPassword = false;
 
 	var connectedCalculatrice = false;
@@ -21,7 +23,9 @@ $(document).ready(function () {
 	var nombreMessagePrive = 0;
 	var lastMessageOpened = false;
 
-	var nombreIndice = 6;
+	var nombreIndice = 7;
+
+	var calendarOpened = false;
 
 	$("#nombreMessage").text(nombreMessage);
 	$("#nombreLinkedin").text(nombreLinkedin);
@@ -42,6 +46,31 @@ $(document).ready(function () {
 				$(this).css('display', 'flex');
 			}
 		});
+	}
+
+	function updateNombreIndice() {
+		$("#indiceTrouve").css("top", "120%")
+		nombreIndice -= 1;
+		$("#nombreIndice").text(nombreIndice);
+
+		if (nombreIndice <= 0) {
+			$("#finNotif").css("top", "120%")
+	
+			
+			setTimeout(function() {
+				$("#finNotif").css("top", "0");
+			}, 8000);
+
+			$("#endTheGame").css("display", "block")
+
+			nombreIndice = 0;
+			$("#nombreIndice").text(nombreIndice);
+		}
+		else {
+			setTimeout(function() {
+				$("#indiceTrouve").css("top", "0");
+			}, 4000);
+		}
 	}
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -106,6 +135,7 @@ $(document).ready(function () {
 			$("#nombreMessage").text(nombreMessage);
 			updateNotificationDisplay();
 			message1Opened = true;
+			updateNombreIndice();
 		}
 	});
 
@@ -123,6 +153,11 @@ $(document).ready(function () {
 
 	$("#ouvrirMessage3").on("click", function () {
 		$("#message3").css("right", "0")
+
+		if (!message3Opened) { 
+			updateNombreIndice();
+			message3Opened = true;
+		}
 	});
 
 	$(".message i").on("click", function () {
@@ -148,7 +183,6 @@ $(document).ready(function () {
 		if (sendingForgetPassword) {
 			$("#forgetPassword").addClass("cant");
 
-            // Retirer la classe après l'animation
             setTimeout(function() {
                 $("#forgetPassword").removeClass("cant");
             }, 500);
@@ -204,6 +238,7 @@ $(document).ready(function () {
 	
 			setTimeout(function() {
 				$("#lieuBureau").css("top", "0");
+				updateNombreIndice();
 			}, 8000);
 
 			$("#goToDesk").css("display", "block")
@@ -226,6 +261,11 @@ $(document).ready(function () {
 
 	$("#ouvrirCalendrier").on("click", function () {
 		$("#calendrier").css("right", "0")
+
+		if (!calendarOpened) { 
+			updateNombreIndice();
+			calendarOpened = true;
+		}
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -245,7 +285,7 @@ $(document).ready(function () {
 	$("#ouvrirMail1").on("click", function () {
 		$("#mail1").css("right", "0")
 
-		if (!mailOpened) { 
+		if (!mail1Opened) { 
 			nombreMail -= 1;
 
 			$("#nombreMail").text(nombreMail);
@@ -256,6 +296,11 @@ $(document).ready(function () {
 
 	$("#ouvrirMail2").on("click", function () {
 		$("#mail2").css("right", "0")
+
+		if (!mail2Opened) { 
+			updateNombreIndice();
+			mail2Opened = true;
+		}
 	});
 
 	$("#ouvrirMail3").on("click", function () {
@@ -321,6 +366,8 @@ $(document).ready(function () {
 				nombreMessagePrive += 1;
 				$("#nombreMessagePrive").text(nombreMessagePrive);
 				updateNotificationDisplay();
+
+				updateNombreIndice();
 					
 				setTimeout(function() {
 					$("#notifMessage").css("top", "0");
@@ -352,14 +399,7 @@ $(document).ready(function () {
 			updateNotificationDisplay();
 			lastMessageOpened = true;
 
-			$("#finNotif").css("top", "120%")
-	
-			
-			setTimeout(function() {
-				$("#finNotif").css("top", "0");
-			}, 8000);
-
-			$("#endTheGame").css("display", "block")
+			updateNombreIndice();
 		}
 	});
 
@@ -381,7 +421,6 @@ $(document).ready(function () {
 	$("#goToDesk").on("click", function () {
 		$("#maison").css("right", "100%")
 		$("#bureau").css("right", "0%")
-		$("#goToHome").css("display", "block")
 		$("#goToDesk").css("display", "none")
 	})
 
@@ -389,7 +428,6 @@ $(document).ready(function () {
 		$("#maison").css("right", "0")
 		$("#bureau").css("right", "-100%")
 		$("#goToHome").css("display", "none")
-		$("#goToDesk").css("display", "block")
 	})
 
 	/////////////////////////////////////////////////////////////////////////////

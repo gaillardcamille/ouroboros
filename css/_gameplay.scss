@@ -166,6 +166,7 @@
 	p {
 		margin-bottom: 50px;
 		font-size: 18px;
+		text-align: center;
 	}
 
 
@@ -321,4 +322,23 @@
 	background-color: #759BA6;
 	color: white;
 	border-radius: 5px;
+}
+
+#restart {
+	padding: 10px 20px;
+	margin: 100px 0 0;
+	padding: 20px 30px;
+	background-color: unset;
+	border: 1px solid;
+	font-size: 15px;
+	cursor: pointer;
+	transition: all linear .3s;
+	position: relative;
+
+	border-color: white;
+	color: white;
+
+	&:hover {
+		padding: 20px 40px;
+	}
 }

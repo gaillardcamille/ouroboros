@@ -160,6 +160,7 @@ main {
 #finJeu p {
   margin-bottom: 50px;
   font-size: 18px;
+  text-align: center;
 }
 #finJeu > div {
   display: flex;
@@ -296,6 +297,23 @@ main {
   background-color: #759BA6;
   color: white;
   border-radius: 5px;
+}
+
+#restart {
+  padding: 10px 20px;
+  margin: 100px 0 0;
+  padding: 20px 30px;
+  background-color: unset;
+  border: 1px solid;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all linear 0.3s;
+  position: relative;
+  border-color: white;
+  color: white;
+}
+#restart:hover {
+  padding: 20px 40px;
 }
 
 #bureau {
@@ -772,9 +790,12 @@ main {
   font-size: 25px;
 }
 .pageJournal p {
-  margin-bottom: 20px;
   background-color: #D9D9D9;
   padding: 20px 30px;
+}
+.pageJournal p + p {
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 .pageJournal span {
   background-color: #C49B85;
