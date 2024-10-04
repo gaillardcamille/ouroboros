@@ -210,6 +210,10 @@ $(document).ready(function () {
 		$("#mail5").css("right", "0")
 	});
 
+	$(".mail i").on("click", function () {
+		$(this).parent().css("right", "-100%");
+	});
+
 	/////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////
 	
@@ -364,9 +368,12 @@ $(document).ready(function () {
 		$("#maison").css("right", "100%")
 		$("#bureau").css("right", "0%")
 		$("#goToHome").css("display", "block")
+		$("#goToDesk").css("display", "none")
 	})
 	$("#goToHome").on("click", function () {
 		$("#maison").css("right", "0")
 		$("#bureau").css("right", "-100%")
+		$("#goToHome").css("display", "none")
+		$("#goToDesk").css("display", "block")
 	})
 });

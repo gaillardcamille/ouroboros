@@ -188,6 +188,7 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
+  z-index: 4;
 }
 #barre_navigation div:first-of-type {
   position: absolute;
@@ -196,7 +197,6 @@ main {
   bottom: 0;
   width: -moz-fit-content;
   width: fit-content;
-  cursor: pointer;
   left: 25%;
 }
 #barre_navigation div:first-of-type p {
@@ -206,21 +206,6 @@ main {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 20px;
-}
-#barre_navigation div:first-of-type p::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 3px;
-  border-radius: 3px;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  background-color: currentColor;
-  transition: all linear 0.4s;
-}
-#barre_navigation div:first-of-type p:hover::after {
-  width: 100%;
 }
 
 #ouvrirTelephone {
@@ -322,7 +307,7 @@ main {
 
 .dialogue-box {
   position: absolute;
-  bottom: 0;
+  bottom: 70px;
   left: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.774);
@@ -464,6 +449,13 @@ main {
   padding: 20px 40px;
   z-index: 2;
   transition: all ease-in-out 0.5s;
+}
+#mail .mail i {
+  position: absolute;
+  top: 75px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
 }
 
 .apercuMail {

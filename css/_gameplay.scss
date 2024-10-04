@@ -72,6 +72,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: white;
+	z-index: 4;
 
 	div:first-of-type {
 		position: absolute;
@@ -79,7 +80,6 @@
 		transform: translateY(-50%);
 		bottom: 0;
 		width: fit-content;
-		cursor: pointer;
 		left: 25%;
 	
 		p {
@@ -88,23 +88,6 @@
 			position: relative;
 			width: fit-content;
 			font-size: 20px;
-	
-			&::after {
-				content: "";
-				display: block;
-				width: 0;
-				height: 3px;
-				border-radius: 3px;
-				position: absolute;
-				left: 0;
-				bottom: -5px;
-				background-color: currentColor;
-				transition: all linear .4s;
-			}
-		
-			&:hover::after {
-				width: 100%;
-			}
 		}
 	}
 }
