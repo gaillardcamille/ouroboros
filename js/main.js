@@ -78,6 +78,10 @@ $(document).ready(function () {
 		}
 	});
 
+	$(".message i").on("click", function () {
+		$(this).closest('.message').css("right", "-100%");
+	});
+
 	/////////////////////////////////////////////////////////////////////////////
 	/////////////////////////////////////////////////////////////////////////////
 	
@@ -159,6 +163,10 @@ $(document).ready(function () {
 
 	$("#ouvrirLinkedin2").on("click", function () {
 		$("#linkedin2").css("right", "0")
+	});
+
+	$(".linkedinMessage i").on("click", function () {
+		$(this).closest('.linkedinMessage').css("right", "-100%");
 	});
 
 	/////////////////////////////////////////////////////////////////////////////
@@ -300,6 +308,15 @@ $(document).ready(function () {
 
 			$("#endTheGame").css("display", "block")
 		}
+	});
+
+	$("#messagePrive h2 i").on("click", function () {
+		$("#messagePrive").css("right", "-100%");
+	});
+
+	$("#journal h2 i").on("click", function () {
+		$("#journal").css("right", "-100%");
+		$(".pageJournal").css("right", "-100%")
 	});
 
 	/////////////////////////////////////////////////////////////////////////////

@@ -63,6 +63,19 @@
 		color: white;
 		margin: 0 30px;
 		padding: 15px 0;
+
+		i {
+			position: absolute;
+			left: 50px;
+			font-size: 30px;
+			color: white;
+			cursor: pointer;
+			transition: all linear .2s;
+
+			&:hover {
+				left: 45px;
+			}
+		}
 	}
 
 	.pageJournal {
@@ -153,6 +166,19 @@
 			width: 14px;
 			border-radius: 100%;
 			background-color: #5D6C59;
+		}
+
+		i {
+			position: absolute;
+			left: -150px;
+			font-size: 30px;
+			color: #E8E5DC;
+			cursor: pointer;
+			transition: all linear .2s;
+
+			&:hover {
+				left: -155px;
+			}
 		}
 	}
 

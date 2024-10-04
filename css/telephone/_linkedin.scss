@@ -127,8 +127,7 @@
 }
 
 
-#linkedin1,
-#linkedin2 {
+.linkedinMessage {
 	position: absolute;
 	top: -50px;
 	right: -100%;
@@ -145,6 +144,20 @@
 		text-align: center;
 		margin-bottom: 30px;
 		font-size: 20px;
+
+		i {
+			position: absolute;
+			top: -2px;
+			font-size: 32px;
+			color: white;
+			cursor: pointer;
+			left: 30px;
+			transition: all linear .2s;
+
+			&:hover {
+				left: 25px;
+			}
+		}
 	}
 
 	&::after {

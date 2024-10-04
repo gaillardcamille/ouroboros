@@ -385,8 +385,7 @@ main {
 #messages {
   background-color: rgb(248, 225, 221);
 }
-#messages #message1,
-#messages #message2 {
+#messages .message {
   position: absolute;
   top: 70px;
   right: -100%;
@@ -396,12 +395,20 @@ main {
   transition: all ease-in-out 0.5s;
   width: 100%;
 }
-#messages #message1 .numeroContact,
-#messages #message2 .numeroContact {
+#messages .message .numeroContact {
   color: #917f92;
   text-align: center;
   margin-bottom: 30px;
   font-size: 20px;
+}
+#messages .message .numeroContact i {
+  position: absolute;
+  left: 50px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+#messages .message .numeroContact i:hover {
+  left: 45px;
 }
 #messages .discussion {
   background-color: rgb(248, 225, 221);
@@ -432,7 +439,7 @@ main {
   font-style: italic;
 }
 .apercuMessage:hover {
-  background-color: rgb(203, 209, 214);
+  background-color: rgb(193, 178, 192);
 }
 
 #mail {
@@ -597,8 +604,7 @@ main {
   background: linear-gradient(0deg, rgb(115, 170, 186) 0%, rgba(115, 170, 186, 0) 100%);
 }
 
-#linkedin1,
-#linkedin2 {
+.linkedinMessage {
   position: absolute;
   top: -50px;
   right: -100%;
@@ -608,15 +614,25 @@ main {
   transition: all ease-in-out 0.5s;
   width: 100%;
 }
-#linkedin1 .numeroContact,
-#linkedin2 .numeroContact {
+.linkedinMessage .numeroContact {
   color: white;
   text-align: center;
   margin-bottom: 30px;
   font-size: 20px;
 }
-#linkedin1::after,
-#linkedin2::after {
+.linkedinMessage .numeroContact i {
+  position: absolute;
+  top: -2px;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  left: 30px;
+  transition: all linear 0.2s;
+}
+.linkedinMessage .numeroContact i:hover {
+  left: 25px;
+}
+.linkedinMessage::after {
   content: "";
   display: block;
   position: relative;
@@ -731,6 +747,17 @@ main {
   margin: 0 30px;
   padding: 15px 0;
 }
+#journal h2 i {
+  position: absolute;
+  left: 50px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+#journal h2 i:hover {
+  left: 45px;
+}
 #journal .pageJournal {
   position: absolute;
   top: 15%;
@@ -812,6 +839,17 @@ main {
   width: 14px;
   border-radius: 100%;
   background-color: #5D6C59;
+}
+#messagePrive h2 i {
+  position: absolute;
+  left: -150px;
+  font-size: 30px;
+  color: #E8E5DC;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+#messagePrive h2 i:hover {
+  left: -155px;
 }
 #messagePrive .discussion {
   background-color: #85847F;
