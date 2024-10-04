@@ -50,8 +50,9 @@ $(document).ready(function () {
 	}
 
 	function updateNombreIndice() {
-		$("#indiceTrouve").css("top", "120%")
 		nombreIndice -= 1;
+		
+		
 		$("#nombreIndice").text(nombreIndice);
 
 		if (nombreIndice <= 0) {
@@ -68,6 +69,8 @@ $(document).ready(function () {
 			$("#nombreIndice").text(nombreIndice);
 		}
 		else {
+			$("#indiceTrouve").css("top", "120%")
+
 			setTimeout(function() {
 				$("#indiceTrouve").css("top", "0");
 			}, 4000);
@@ -337,7 +340,7 @@ $(document).ready(function () {
 	$("#equal").on("click", function () {
 		var currentText = $('#result').text();
 		console.log(currentText)
-		if (currentText == "13092012" || currentText == "09132012") {
+		if (currentText == "13092012" || currentText == "09132012" || currentText == "20120913" || currentText == "20121309") {
 			connectedCalculatrice = true
 			$("#zonePrive").css("right", "0")
 		}
