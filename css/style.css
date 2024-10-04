@@ -214,7 +214,7 @@ main {
   transition: right ease-in-out 0.5s;
 }
 
-@media screen and (max-width: 1915px), screen and (max-height: 1075px) {
+@media screen and (max-width: 1910px), screen and (max-height: 1070px) {
   #taille_insuffisante {
     display: flex;
   }
@@ -525,7 +525,7 @@ main {
 }
 
 #mail {
-  background-image: url(../../img/background/Fond_mail.png);
+  background-image: url(../img/background/Fond_mail.png);
   height: calc(100% - 230px);
   padding: 150px 0;
 }
@@ -777,7 +777,7 @@ main {
   width: calc(100% - 70px);
   right: -100%;
   top: 0;
-  background-image: url(../../img/background/Fond_calculatrice.png);
+  background-image: url(../img/background/Fond_calculatrice.png);
   transition: all ease-in-out 0.5s;
 }
 #zonePrive h2 {
