@@ -49,7 +49,7 @@
 
 .name-tag {
     background: #007BFF; 
-    color: white; 
+    color: var(--white-color); 
     border-radius: 5px;
     width: 150px;
     padding: 25px;
@@ -76,7 +76,7 @@
     font-size: 2rem;
     display: block;
     background: var(--jean-bleue);
-    color: white;
+    color: var(--white-color);
     padding: 10px 20px;
     margin: 5px 0;
     border: none;

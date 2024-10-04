@@ -20,6 +20,8 @@ main {
 }
 
 :root {
+  --white-color: white;
+  --black-color: black;
   --blanc-fume: #E8E5DC;
   --moka-moderne: #9D8277;
   --villa: #E9D5CC;
@@ -84,7 +86,7 @@ main {
   border-radius: 7px;
   transition: all linear 0.3s;
   z-index: 2;
-  color: white;
+  color: var(--white-color);
   height: 60px;
   display: flex;
   flex-direction: column;
@@ -102,8 +104,8 @@ main {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
   cursor: pointer;
   z-index: 99;
   top: 0;
@@ -138,8 +140,8 @@ main {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: black;
-  color: white;
+  background-color: var(--black-color);
+  color: var(--white-color);
   cursor: pointer;
   z-index: 98;
   top: 100%;
@@ -160,7 +162,7 @@ main {
 }
 #finJeu button:first-child:hover {
   background-color: rgb(96, 199, 75);
-  color: black;
+  color: var(--black-color);
   padding: 20px 35px;
 }
 #finJeu button:last-child {
@@ -169,7 +171,7 @@ main {
 }
 #finJeu button:last-child:hover {
   background-color: rgb(235, 114, 114);
-  color: black;
+  color: var(--black-color);
   padding: 20px 35px;
 }
 #finJeu p {
@@ -209,7 +211,7 @@ main {
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--white-color);
   z-index: 4;
 }
 #barre_navigation div:first-of-type {
@@ -223,7 +225,7 @@ main {
 }
 #barre_navigation div:first-of-type p {
   margin-top: 10px;
-  color: white;
+  color: var(--white-color);
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
@@ -241,7 +243,7 @@ main {
 }
 #ouvrirTelephone p {
   margin-top: 10px;
-  color: white;
+  color: var(--white-color);
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
@@ -281,7 +283,7 @@ main {
   cursor: pointer;
   border: none;
   background: unset;
-  color: white;
+  color: var(--white-color);
 }
 #goToHome::after, #goToDesk::after {
   content: "";
@@ -310,7 +312,7 @@ main {
   font-size: 40px;
   border: 5px solid #257581;
   background-color: var(--voyage);
-  color: white;
+  color: var(--white-color);
   border-radius: 5px;
 }
 
@@ -324,8 +326,8 @@ main {
   cursor: pointer;
   transition: all linear 0.3s;
   position: relative;
-  border-color: white;
-  color: white;
+  border-color: var(--white-color);
+  color: var(--white-color);
 }
 #restart:hover {
   padding: 20px 40px;
@@ -382,7 +384,7 @@ main {
 
 .name-tag {
   background: #007BFF;
-  color: white;
+  color: var(--white-color);
   border-radius: 5px;
   width: 150px;
   padding: 25px;
@@ -409,7 +411,7 @@ main {
   font-size: 2rem;
   display: block;
   background: var(--jean-bleue);
-  color: white;
+  color: var(--white-color);
   padding: 10px 20px;
   margin: 5px 0;
   border: none;
@@ -449,7 +451,7 @@ main {
   height: 80%;
 }
 #messages .discussion .other {
-  background-color: white;
+  background-color: var(--white-color);
 }
 #messages .discussion .date {
   color: #917f92;
@@ -548,7 +550,7 @@ main {
   background-color: var(--bleu-nocturne);
 }
 #linkedin h2 {
-  color: white;
+  color: var(--white-color);
 }
 
 #connexion {
@@ -562,8 +564,8 @@ main {
   padding: 10px 15px;
   border: none;
   background-color: unset;
-  border-bottom: 1px solid white;
-  color: white;
+  border-bottom: 1px solid var(--white-color);
+  color: var(--white-color);
 }
 #connexion input::-moz-placeholder {
   color: rgba(255, 255, 255, 0.767);
@@ -576,14 +578,14 @@ main {
 }
 #connexion button {
   background-color: unset;
-  border: 1px solid white;
+  border: 1px solid var(--white-color);
   padding: 10px 15px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
-  color: white;
+  color: var(--white-color);
 }
 #connexion button:hover {
-  background-color: white;
+  background-color: var(--white-color);
   color: var(--bleu-nocturne);
 }
 #connexion p {
@@ -609,7 +611,7 @@ main {
   background-color: var(--bleu-nocturne);
 }
 #messageLinkedin h3 {
-  color: white;
+  color: var(--white-color);
 }
 
 .linkedinMessage {
@@ -623,7 +625,7 @@ main {
   width: 100%;
 }
 .linkedinMessage .numeroContact {
-  color: white;
+  color: var(--white-color);
   text-align: center;
   margin-bottom: 30px;
   font-size: 20px;
@@ -632,7 +634,7 @@ main {
   position: absolute;
   top: -2px;
   font-size: 32px;
-  color: white;
+  color: var(--white-color);
   cursor: pointer;
   left: 30px;
   transition: all linear 0.2s;
@@ -736,7 +738,7 @@ main {
   font-size: 40px;
   border: none;
   position: relative;
-  box-shadow: 0px 4px 6px -3px black;
+  box-shadow: 0px 4px 6px -3px var(--black-color);
   top: 0;
   transition: all linear 0.2s;
 }
@@ -768,7 +770,7 @@ main {
 }
 #journal h2 {
   background-color: #6D4E61;
-  color: white;
+  color: var(--white-color);
   margin: 0 30px;
   padding: 15px 0;
 }
@@ -776,7 +778,7 @@ main {
   position: absolute;
   left: 50px;
   font-size: 30px;
-  color: white;
+  color: var(--white-color);
   cursor: pointer;
   transition: all linear 0.2s;
 }
@@ -805,7 +807,7 @@ main {
   font-size: 25px;
 }
 .pageJournal p {
-  background-color: #D9D9D9;
+  background-color: var(--blanc-fume);
   padding: 20px 30px;
 }
 .pageJournal p + p {
@@ -882,6 +884,7 @@ main {
 }
 #messagePrive .discussion p {
   background-color: var(--broadway);
+  color: var(--blanc-fume);
 }
 #messagePrive .discussion p span {
   color: var(--moka-moderne);
@@ -972,7 +975,7 @@ main {
   width: calc(100% - 40px);
   padding: 0 20px;
   position: absolute;
-  color: white;
+  color: var(--white-color);
   background-image: url("../img/icons/Barre_top.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -1049,7 +1052,7 @@ main {
   height: 25px;
   background-color: #963535;
   border-radius: 100%;
-  color: white;
+  color: var(--white-color);
 }
 .iconsTelephone > div img {
   height: 100%;

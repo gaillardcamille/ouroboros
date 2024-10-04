@@ -59,7 +59,7 @@
 		border-radius: 7px;
 		transition: all linear .3s;
 		z-index: 2;
-		color: white;
+		color: var(--white-color);
 		height: 60px;
 		display: flex;
 		flex-direction: column;
@@ -84,8 +84,8 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: black;
-	color: white;
+	background-color: var(--black-color);
+	color: var(--white-color);
 	cursor: pointer;
 	z-index: 99;
 	top: 0;
@@ -124,8 +124,8 @@
 	position: absolute;
 	height: 100%;
 	width: 100%;
-	background-color: black;
-	color: white;
+	background-color: var(--black-color);
+	color: var(--white-color);
 	cursor: pointer;
 	z-index: 98;
 	top: 100%;
@@ -146,7 +146,7 @@
 
 			&:hover {
 				background-color: rgb(96, 199, 75);
-				color: black;
+				color: var(--black-color);
 				padding: 20px 35px;
 			}
 		}
@@ -157,7 +157,7 @@
 
 			&:hover {
 				background-color: rgb(235, 114, 114);
-				color: black;
+				color: var(--black-color);
 				padding: 20px 35px;
 			}
 		}
@@ -207,7 +207,7 @@
 	background-position: bottom;
 	background-size: cover;
 	background-repeat: no-repeat;
-	color: white;
+	color: var(--white-color);
 	z-index: 4;
 
 	div:first-of-type {
@@ -220,7 +220,7 @@
 	
 		p {
 			margin-top: 10px;
-			color: white;
+			color: var(--white-color);
 			position: relative;
 			width: fit-content;
 			font-size: 20px;
@@ -239,7 +239,7 @@
 
 	p {
 		margin-top: 10px;
-		color: white;
+		color: var(--white-color);
 		position: relative;
 		width: fit-content;
 		font-size: 20px;
@@ -285,7 +285,7 @@
 	cursor: pointer;
 	border: none;
 	background: unset;
-	color: white;
+	color: var(--white-color);
 
 	&::after {
 		content: "";
@@ -320,7 +320,7 @@
 	font-size: 40px;
 	border: 5px solid #257581;
 	background-color: var(--voyage);
-	color: white;
+	color: var(--white-color);
 	border-radius: 5px;
 }
 
@@ -335,8 +335,8 @@
 	transition: all linear .3s;
 	position: relative;
 
-	border-color: white;
-	color: white;
+	border-color: var(--white-color);
+	color: var(--white-color);
 
 	&:hover {
 		padding: 20px 40px;

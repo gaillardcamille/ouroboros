@@ -2,7 +2,7 @@
 	background-color: var(--bleu-nocturne);
 
 	h2 {
-		color: white;
+		color: var(--white-color);
 	}
 }
 
@@ -17,8 +17,8 @@
 		padding: 10px 15px;
 		border: none;
 		background-color: unset;
-		border-bottom: 1px solid white;
-		color: white;
+		border-bottom: 1px solid var(--white-color);
+		color: var(--white-color);
 
 		&::placeholder {
 			color: rgba(255, 255, 255, 0.767);
@@ -31,14 +31,14 @@
 
 	button {
 		background-color: unset;
-		border: 1px solid white;
+		border: 1px solid var(--white-color);
 		padding: 10px 15px;
 		cursor: pointer;
 		transition: all ease-in-out .2s;
-		color: white;
+		color: var(--white-color);
 
 		&:hover {
-			background-color: white;
+			background-color: var(--white-color);
 			color: var(--bleu-nocturne);
 		}
 	}
@@ -71,7 +71,7 @@
 	background-color: var(--bleu-nocturne);
 	
 	h3 {
-		color: white;
+		color: var(--white-color);
 	}
 }
 
@@ -88,7 +88,7 @@
 	width: 100%;
 
 	.numeroContact {
-		color: white;
+		color: var(--white-color);
 		text-align: center;
 		margin-bottom: 30px;
 		font-size: 20px;
@@ -97,7 +97,7 @@
 			position: absolute;
 			top: -2px;
 			font-size: 32px;
-			color: white;
+			color: var(--white-color);
 			cursor: pointer;
 			left: 30px;
 			transition: all linear .2s;
