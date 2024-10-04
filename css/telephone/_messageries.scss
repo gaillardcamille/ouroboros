@@ -101,7 +101,7 @@
 		position: absolute;
 		top: 75px;
 		font-size: 40px;
-		color: #E8E5DC;
+		color: var(--blanc-fume);
 		cursor: pointer;
 	}
 }
@@ -109,7 +109,7 @@
 .apercuMail {
 	padding: 15px 50px;
 	cursor: pointer;
-	background-color: #9D8277;
+	background-color: var(--moka-moderne);
 	margin: 20px 30px;
 	border-radius: 10px;
 

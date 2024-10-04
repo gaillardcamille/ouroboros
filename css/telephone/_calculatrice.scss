@@ -1,8 +1,8 @@
 #calculatrice {
-	background-color: #5D6C59;
+	background-color: var(--verger);
 
 	h2 {
-		color: #E9D5CC;
+		color: var(--villa);
 	}
 }
 
@@ -12,7 +12,7 @@
 	>div:first-child {
 		display: block;
 		width: calc(85% - 10px);
-		border: 2px solid #E9D5CC;
+		border: 2px solid var(--villa);
 		height: 50px;
 		left: 7.5%;
 		position: relative;
@@ -20,7 +20,7 @@
 		cursor: not-allowed;
 		align-content: center;
 		padding-left: 10px;
-		color: #E9D5CC;
+		color: var(--villa);
 		font-size: 40px;
 	}
 
@@ -37,8 +37,8 @@
 			width: 100px;
 			height: 75px;
 			cursor: pointer;
-			background-color: #E9D5CC;
-			color: #5D6C59;
+			background-color: var(--villa);
+			color: var(--verger);
 			font-size: 40px;
 			border: none;
 			position: relative;
@@ -78,7 +78,7 @@
 ////////////////
 
 #journal {
-	background-color: #7E566E;
+	background-color: var(--magenta);
 	top: 0;
 
 	h2 {
@@ -134,7 +134,7 @@
 	}
 
 	span {
-		background-color: #C49B85;
+		background-color: var(--poussiere);
 		display: block;
 		padding: 15px 25px;
 	}
@@ -171,13 +171,13 @@
 ////////////////////
 
 #messagePrive {
-	background-color: #444442;
+	background-color: var(--broadway);
 	top: 0;
 	padding: 80px 0px;
 	width: 100%;
 
 	h2 {
-		color: #E8E5DC;
+		color: var(--blanc-fume);
 		position: relative;
 		width: fit-content;
 		margin: 0 auto 35px;
@@ -192,14 +192,14 @@
 			height: 14px;
 			width: 14px;
 			border-radius: 100%;
-			background-color: #5D6C59;
+			background-color: var(--verger);
 		}
 
 		i {
 			position: absolute;
 			left: -150px;
 			font-size: 30px;
-			color: #E8E5DC;
+			color: var(--blanc-fume);
 			cursor: pointer;
 			transition: all linear .2s;
 
@@ -210,14 +210,14 @@
 	}
 
 	.discussion {
-		background-color: #85847F;
+		background-color: var(--gris);
 		height: 75%;
 
 		p {
-			background-color: #444442;
+			background-color: var(--broadway);
 
 			span {
-				color: #9D8277;
+				color: var(--moka-moderne);
 			}
 		}
 
@@ -226,7 +226,7 @@
 		}
 	
 		.date {
-			color: #444442;
+			color: var(--broadway);
 			background-color: unset;
 		}
 	
@@ -247,7 +247,7 @@
 		bottom: 0px;
 		height: 28%;
 		width: 100%;
-		background-color: #85847F;
+		background-color: var(--gris);
 	}
 }
 

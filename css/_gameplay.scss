@@ -16,7 +16,7 @@
 		top: 0;
 		width: 90%;
 		border: 3px solid #257581;
-		background-color: #759BA6;
+		background-color: var(--voyage);
 		padding: 10px 15px;
 		border-radius: 10px;
 		transition: all linear .3s;
@@ -54,7 +54,7 @@
 		top: 0;
 		width: 90%;
 		border: 3px solid #257581;
-		background-color: #759BA6;
+		background-color: var(--voyage);
 		padding: 10px 15px;
 		border-radius: 7px;
 		transition: all linear .3s;
@@ -319,7 +319,7 @@
 	display: none;
 	font-size: 40px;
 	border: 5px solid #257581;
-	background-color: #759BA6;
+	background-color: var(--voyage);
 	color: white;
 	border-radius: 5px;
 }

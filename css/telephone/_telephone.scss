@@ -179,7 +179,7 @@
 
 	span {
 		display: block;
-		color: #A05542;
+		color: var(--coucher-soleil);
 		margin-bottom: 10px;
 	}
 	p {
@@ -199,7 +199,7 @@
 	.date {
 		background-color: unset;
 		text-align: center;
-		color: #324C59;
+		color: var(--bleu-nocturne);
 	}
 
 	&::before {

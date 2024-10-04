@@ -19,6 +19,21 @@ main {
   width: 100%;
 }
 
+:root {
+  --blanc-fume: #E8E5DC;
+  --moka-moderne: #9D8277;
+  --villa: #E9D5CC;
+  --poussiere: #C49B85;
+  --gris: #85847F;
+  --voyage: #759BA6;
+  --jean-bleue: #7A90A5;
+  --coucher-soleil: #A05542;
+  --magenta: #7E566E;
+  --bleu-nocturne: #324C59;
+  --verger: #5D6C59;
+  --broadway: #444442;
+}
+
 #evenementJeu {
   position: absolute;
   top: -30%;
@@ -33,7 +48,7 @@ main {
   top: 0;
   width: 90%;
   border: 3px solid #257581;
-  background-color: #759BA6;
+  background-color: var(--voyage);
   padding: 10px 15px;
   border-radius: 10px;
   transition: all linear 0.3s;
@@ -64,7 +79,7 @@ main {
   top: 0;
   width: 90%;
   border: 3px solid #257581;
-  background-color: #759BA6;
+  background-color: var(--voyage);
   padding: 10px 15px;
   border-radius: 7px;
   transition: all linear 0.3s;
@@ -294,7 +309,7 @@ main {
   display: none;
   font-size: 40px;
   border: 5px solid #257581;
-  background-color: #759BA6;
+  background-color: var(--voyage);
   color: white;
   border-radius: 5px;
 }
@@ -393,7 +408,7 @@ main {
 .choice-button {
   font-size: 2rem;
   display: block;
-  background: #7A90A5;
+  background: var(--jean-bleue);
   color: white;
   padding: 10px 20px;
   margin: 5px 0;
@@ -507,14 +522,14 @@ main {
   position: absolute;
   top: 75px;
   font-size: 40px;
-  color: #E8E5DC;
+  color: var(--blanc-fume);
   cursor: pointer;
 }
 
 .apercuMail {
   padding: 15px 50px;
   cursor: pointer;
-  background-color: #9D8277;
+  background-color: var(--moka-moderne);
   margin: 20px 30px;
   border-radius: 10px;
 }
@@ -530,7 +545,7 @@ main {
 }
 
 #linkedin {
-  background-color: #324C59;
+  background-color: var(--bleu-nocturne);
 }
 #linkedin h2 {
   color: white;
@@ -569,7 +584,7 @@ main {
 }
 #connexion button:hover {
   background-color: white;
-  color: #324C59;
+  color: var(--bleu-nocturne);
 }
 #connexion p {
   font-style: italic;
@@ -591,7 +606,7 @@ main {
   margin: 80px 0;
   z-index: 2;
   transition: all ease-in-out 0.5s;
-  background-color: #324C59;
+  background-color: var(--bleu-nocturne);
 }
 #messageLinkedin h3 {
   color: white;
@@ -602,7 +617,7 @@ main {
   top: -50px;
   right: -100%;
   height: calc(92% - 40px);
-  background-color: #324C59;
+  background-color: var(--bleu-nocturne);
   z-index: 2;
   transition: all ease-in-out 0.5s;
   width: 100%;
@@ -637,7 +652,7 @@ main {
 }
 
 #ouvrirLinkedin1 {
-  border: #A05542 3px solid;
+  border: var(--coucher-soleil) 3px solid;
 }
 
 .apercuLinkedin {
@@ -651,10 +666,10 @@ main {
 .apercuLinkedin p:first-child {
   font-weight: 700;
   padding-bottom: 5px;
-  color: #A05542;
+  color: var(--coucher-soleil);
 }
 .apercuLinkedin p:last-child {
-  color: #324C59;
+  color: var(--bleu-nocturne);
 }
 .apercuLinkedin:hover {
   background-color: rgb(255, 255, 255);
@@ -679,10 +694,10 @@ main {
   }
 }
 #calculatrice {
-  background-color: #5D6C59;
+  background-color: var(--verger);
 }
 #calculatrice h2 {
-  color: #E9D5CC;
+  color: var(--villa);
 }
 
 #calcul {
@@ -691,7 +706,7 @@ main {
 #calcul > div:first-child {
   display: block;
   width: calc(85% - 10px);
-  border: 2px solid #E9D5CC;
+  border: 2px solid var(--villa);
   height: 50px;
   left: 7.5%;
   position: relative;
@@ -699,7 +714,7 @@ main {
   cursor: not-allowed;
   align-content: center;
   padding-left: 10px;
-  color: #E9D5CC;
+  color: var(--villa);
   font-size: 40px;
 }
 #calcul > div:last-child {
@@ -716,8 +731,8 @@ main {
   width: 100px;
   height: 75px;
   cursor: pointer;
-  background-color: #E9D5CC;
-  color: #5D6C59;
+  background-color: var(--villa);
+  color: var(--verger);
   font-size: 40px;
   border: none;
   position: relative;
@@ -748,7 +763,7 @@ main {
 }
 
 #journal {
-  background-color: #7E566E;
+  background-color: var(--magenta);
   top: 0;
 }
 #journal h2 {
@@ -798,7 +813,7 @@ main {
   padding-top: 5px;
 }
 .pageJournal span {
-  background-color: #C49B85;
+  background-color: var(--poussiere);
   display: block;
   padding: 15px 25px;
 }
@@ -826,13 +841,13 @@ main {
 }
 
 #messagePrive {
-  background-color: #444442;
+  background-color: var(--broadway);
   top: 0;
   padding: 80px 0px;
   width: 100%;
 }
 #messagePrive h2 {
-  color: #E8E5DC;
+  color: var(--blanc-fume);
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
@@ -848,13 +863,13 @@ main {
   height: 14px;
   width: 14px;
   border-radius: 100%;
-  background-color: #5D6C59;
+  background-color: var(--verger);
 }
 #messagePrive h2 i {
   position: absolute;
   left: -150px;
   font-size: 30px;
-  color: #E8E5DC;
+  color: var(--blanc-fume);
   cursor: pointer;
   transition: all linear 0.2s;
 }
@@ -862,20 +877,20 @@ main {
   left: -155px;
 }
 #messagePrive .discussion {
-  background-color: #85847F;
+  background-color: var(--gris);
   height: 75%;
 }
 #messagePrive .discussion p {
-  background-color: #444442;
+  background-color: var(--broadway);
 }
 #messagePrive .discussion p span {
-  color: #9D8277;
+  color: var(--moka-moderne);
 }
 #messagePrive .discussion .other {
   background-color: #636159;
 }
 #messagePrive .discussion .date {
-  color: #444442;
+  color: var(--broadway);
   background-color: unset;
 }
 #messagePrive .discussion::before {
@@ -892,7 +907,7 @@ main {
   bottom: 0px;
   height: 28%;
   width: 100%;
-  background-color: #85847F;
+  background-color: var(--gris);
 }
 
 .newMessage {
@@ -1069,7 +1084,7 @@ main {
 }
 .discussion span {
   display: block;
-  color: #A05542;
+  color: var(--coucher-soleil);
   margin-bottom: 10px;
 }
 .discussion p {
@@ -1087,7 +1102,7 @@ main {
 .discussion .date {
   background-color: unset;
   text-align: center;
-  color: #324C59;
+  color: var(--bleu-nocturne);
 }
 .discussion::before {
   content: "";
