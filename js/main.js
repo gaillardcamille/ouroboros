@@ -23,7 +23,7 @@ $(document).ready(function () {
 	var nombreMessagePrive = 0;
 	var lastMessageOpened = false;
 
-	var nombreIndice = 7;
+	var nombreIndice = 8;
 
 	var calendarOpened = false;
 
@@ -238,12 +238,8 @@ $(document).ready(function () {
 			updateNotificationDisplay();
 			linkedin1Opened = true;
 
-			$("#lieuBureau").css("top", "120%")
+			$("#lieuBureau").css("top", "175%")
 			updateNombreIndice();
-	
-			setTimeout(function() {
-				$("#lieuBureau").css("top", "0");
-			}, 8000);
 
 			$("#goToDesk").css("display", "block")
 		}
@@ -426,12 +422,14 @@ $(document).ready(function () {
 		$("#maison").css("right", "100%")
 		$("#bureau").css("right", "0%")
 		$("#goToDesk").css("display", "none")
+		$("#lieuBureau").css("top", "0")
 	})
 
 	$("#goToHome").on("click", function () {
 		$("#maison").css("right", "0")
 		$("#bureau").css("right", "-100%")
 		$("#goToHome").css("display", "none")
+		updateNombreIndice()
 	})
 
 	/////////////////////////////////////////////////////////////////////////////

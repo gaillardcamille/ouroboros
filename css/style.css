@@ -68,6 +68,10 @@ main {
   font-size: 23px;
   text-align: center;
 }
+#evenementJeu #lieuBureau {
+  border: 3px solid var(--coucher-soleil);
+  background-color: #A76845;
+}
 
 #notifications {
   position: absolute;
