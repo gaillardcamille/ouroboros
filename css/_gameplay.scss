@@ -196,7 +196,7 @@
 }
 
 #maison {
-	background-image: url(../img/background/Fond_maison.png);
+	background-image: url("../img/background/Fond_maison.png");
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -221,7 +221,7 @@
 	left: 0;
 	bottom: -40px;
 	height: 118px;
-	background-image: url(../img/icons/Barre_navigation.png);
+	background-image: url("../img/icons/Barre_navigation.png");
 	width: 100%;
 	background-position: bottom;
 	background-size: cover;

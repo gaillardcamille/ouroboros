@@ -204,7 +204,7 @@ main {
 }
 
 #maison {
-  background-image: url(../img/background/Fond_maison.png);
+  background-image: url("../img/background/Fond_maison.png");
   position: absolute;
   height: 100%;
   width: 100%;
@@ -224,7 +224,7 @@ main {
   left: 0;
   bottom: -40px;
   height: 118px;
-  background-image: url(../img/icons/Barre_navigation.png);
+  background-image: url("../img/icons/Barre_navigation.png");
   width: 100%;
   background-position: bottom;
   background-size: cover;
@@ -525,7 +525,7 @@ main {
 }
 
 #mail {
-  background-image: url(../img/background/Fond_mail.png);
+  background-image: url("../img/background/Fond_mail.png");
   height: calc(100% - 230px);
   padding: 150px 0;
 }
@@ -777,7 +777,7 @@ main {
   width: calc(100% - 70px);
   right: -100%;
   top: 0;
-  background-image: url(../img/background/Fond_calculatrice.png);
+  background-image: url("../img/background/Fond_calculatrice.png");
   transition: all ease-in-out 0.5s;
 }
 #zonePrive h2 {
