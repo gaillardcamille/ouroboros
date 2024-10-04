@@ -57,30 +57,133 @@
 	}
 }
 
+//////////////////////////
+////    NAVIGATION    ////
+//////////////////////////
 
+#barre_navigation {
+	position: absolute;
+	left: 0;
+	bottom: -40px;
+	height: 118px;
+	background-image: url(../img/icons/Barre_navigation.png);
+	width: 100%;
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
 
+	div:first-of-type {
+		position: absolute;
+		top: calc(50% - 9px);
+		transform: translateY(-50%);
+		bottom: 0;
+		width: fit-content;
+		cursor: pointer;
+		left: 25%;
+	
+		p {
+			margin-top: 10px;
+			color: white;
+			position: relative;
+			width: fit-content;
+			font-size: 20px;
+	
+			&::after {
+				content: "";
+				display: block;
+				width: 0;
+				height: 3px;
+				border-radius: 3px;
+				position: absolute;
+				left: 0;
+				bottom: -5px;
+				background-color: currentColor;
+				transition: all linear .4s;
+			}
+		
+			&:hover::after {
+				width: 100%;
+			}
+		}
+	}
+}
 
+#ouvrirTelephone {
+	position: absolute;
+	top: calc(50% - 9px);
+	transform: translateY(-50%);
+	bottom: 0;
+	width: 250px;
+	cursor: pointer;
+	right: 30%;
 
+	p {
+		margin-top: 10px;
+		color: white;
+		position: relative;
+		width: fit-content;
+		font-size: 20px;
 
+		&::after {
+			content: "";
+			display: block;
+			width: 0;
+			height: 3px;
+			border-radius: 3px;
+			position: absolute;
+			left: 0;
+			bottom: -5px;
+			background-color: currentColor;
+			transition: all linear .4s;
+		}
+	
+		&:hover::after {
+			width: 100%;
+		}
+	}
+}
 
 
 
 //////////////////////////
-
+////    CHANGEMENT    ////
+//////////////////////////
 
 #goToDesk {
 	display: none;
-	right: 20px;
+	right: 100px;
 }
 
 #goToHome {
-	left: 20px;
+	left: 100px;
+	display: none;
 }
 
 #goToHome, #goToDesk {
 	position: absolute;
-	top: 50%;
+	top: calc(50% - 20px);
 	font-size: 20px;
 	transform: translateY(-50%);
 	cursor: pointer;
+	border: none;
+	background: unset;
+	color: white;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 0;
+		height: 3px;
+		border-radius: 3px;
+		position: absolute;
+		left: 0;
+		bottom: -5px;
+		background-color: currentColor;
+		transition: all linear .4s;
+	}
+
+	&:hover::after {
+		width: 100%;
+	}
 }

@@ -177,21 +177,119 @@ main {
   margin-bottom: 5px;
 }
 
+#barre_navigation {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  height: 118px;
+  background-image: url(../img/icons/Barre_navigation.png);
+  width: 100%;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+#barre_navigation div:first-of-type {
+  position: absolute;
+  top: calc(50% - 9px);
+  transform: translateY(-50%);
+  bottom: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  left: 25%;
+}
+#barre_navigation div:first-of-type p {
+  margin-top: 10px;
+  color: white;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+}
+#barre_navigation div:first-of-type p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: currentColor;
+  transition: all linear 0.4s;
+}
+#barre_navigation div:first-of-type p:hover::after {
+  width: 100%;
+}
+
+#ouvrirTelephone {
+  position: absolute;
+  top: calc(50% - 9px);
+  transform: translateY(-50%);
+  bottom: 0;
+  width: 250px;
+  cursor: pointer;
+  right: 30%;
+}
+#ouvrirTelephone p {
+  margin-top: 10px;
+  color: white;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+}
+#ouvrirTelephone p::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: currentColor;
+  transition: all linear 0.4s;
+}
+#ouvrirTelephone p:hover::after {
+  width: 100%;
+}
+
 #goToDesk {
   display: none;
-  right: 20px;
+  right: 100px;
 }
 
 #goToHome {
-  left: 20px;
+  left: 100px;
+  display: none;
 }
 
 #goToHome, #goToDesk {
   position: absolute;
-  top: 50%;
+  top: calc(50% - 20px);
   font-size: 20px;
   transform: translateY(-50%);
   cursor: pointer;
+  border: none;
+  background: unset;
+  color: white;
+}
+#goToHome::after, #goToDesk::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  border-radius: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  background-color: currentColor;
+  transition: all linear 0.4s;
+}
+#goToHome:hover::after, #goToDesk:hover::after {
+  width: 100%;
 }
 
 #bureau {
@@ -759,32 +857,6 @@ main {
 
 .newMessage {
   display: none;
-}
-
-#ouvrirTelephone {
-  position: absolute;
-  right: 10%;
-  transform: translateX(-50%);
-  bottom: 0;
-  height: 60px;
-  width: 250px;
-  background-color: rgb(219, 198, 198);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 4px black solid;
-  border-bottom: unset;
-  border-radius: 9px 9px 0 0;
-  cursor: pointer;
-  opacity: 0.7;
-  transition: all linear 0.2s;
-}
-#ouvrirTelephone p {
-  margin-top: 10px;
-}
-#ouvrirTelephone:hover {
-  opacity: 1;
 }
 
 #backgroundTelephone {

@@ -349,7 +349,6 @@ $(document).ready(function () {
 	$("#endTheGame").on("click", function () {
 		$("#finJeu").css("top", "0")
 		
-
 		setTimeout(function() {
 			$("#finJeu div:first-child").css("top", "0")
 			$("#finJeu div:last-child").css("top", "0")
@@ -364,6 +363,7 @@ $(document).ready(function () {
 	$("#goToDesk").on("click", function () {
 		$("#maison").css("right", "100%")
 		$("#bureau").css("right", "0%")
+		$("#goToHome").css("display", "block")
 	})
 	$("#goToHome").on("click", function () {
 		$("#maison").css("right", "0")
