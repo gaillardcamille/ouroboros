@@ -40,7 +40,8 @@ $(document).ready(function () {
 
 	function updateNotificationDisplay() {
 		$('.notificationNumber').each(function() {
-			if ($(this).text().trim() === '' || $(this).text().trim() === '0') {
+			let notificationValue = parseInt($(this).text().trim(), 10);
+			if (isNaN(notificationValue) || notificationValue <= 0) {
 				$(this).css('display', 'none');
 			} else {
 				$(this).css('display', 'flex');
@@ -235,10 +236,10 @@ $(document).ready(function () {
 			linkedin1Opened = true;
 
 			$("#lieuBureau").css("top", "120%")
+			updateNombreIndice();
 	
 			setTimeout(function() {
 				$("#lieuBureau").css("top", "0");
-				updateNombreIndice();
 			}, 8000);
 
 			$("#goToDesk").css("display", "block")

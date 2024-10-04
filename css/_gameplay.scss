@@ -131,6 +131,7 @@
 	display: none;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
 #finJeu {
@@ -196,7 +197,7 @@
 }
 
 #maison {
-	background-image: url("../img/background/Fond_maison.png");
+	background-image: url("../img/background/Fond_maison.webp");
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -221,7 +222,7 @@
 	left: 0;
 	bottom: -40px;
 	height: 118px;
-	background-image: url("../img/icons/Barre_navigation.png");
+	background-image: url("../img/icons/Barre_navigation.webp");
 	width: 100%;
 	background-position: bottom;
 	background-size: cover;

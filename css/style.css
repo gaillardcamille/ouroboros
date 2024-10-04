@@ -147,6 +147,7 @@ main {
   display: none;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #finJeu {
@@ -204,7 +205,7 @@ main {
 }
 
 #maison {
-  background-image: url("../img/background/Fond_maison.png");
+  background-image: url("../img/background/Fond_maison.webp");
   position: absolute;
   height: 100%;
   width: 100%;
@@ -224,7 +225,7 @@ main {
   left: 0;
   bottom: -40px;
   height: 118px;
-  background-image: url("../img/icons/Barre_navigation.png");
+  background-image: url("../img/icons/Barre_navigation.webp");
   width: 100%;
   background-position: bottom;
   background-size: cover;
@@ -525,7 +526,7 @@ main {
 }
 
 #mail {
-  background-image: url("../img/background/Fond_mail.png");
+  background-image: url("../img/background/Fond_mail.webp");
   height: calc(100% - 230px);
   padding: 150px 0;
 }
@@ -777,7 +778,7 @@ main {
   width: calc(100% - 70px);
   right: -100%;
   top: 0;
-  background-image: url("../img/background/Fond_calculatrice.png");
+  background-image: url("../img/background/Fond_calculatrice.webp");
   transition: all ease-in-out 0.5s;
 }
 #zonePrive h2 {
@@ -827,7 +828,7 @@ main {
   font-size: 25px;
 }
 .pageJournal p {
-  background-color: var(--blanc-fume);
+  background-color: var(--white-color);
   padding: 20px 30px;
 }
 .pageJournal p + p {
@@ -974,7 +975,7 @@ main {
 #telephone > div:first-child {
   width: 100%;
   height: 100%;
-  background-image: url("../img/background/Fond_verouille.png");
+  background-image: url("../img/background/Fond_verouille.webp");
   z-index: 40;
   position: absolute;
   cursor: pointer;
@@ -985,7 +986,7 @@ main {
 #telephone > div:last-child {
   width: 100%;
   height: 100%;
-  background-image: url("../img/background/Fond_deverouille.png");
+  background-image: url("../img/background/Fond_deverouille.webp");
   position: relative;
   top: 0;
   left: 0;
@@ -996,7 +997,7 @@ main {
   padding: 0 20px;
   position: absolute;
   color: var(--white-color);
-  background-image: url("../img/icons/Barre_top.png");
+  background-image: url("../img/icons/Barre_top.webp");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -1014,7 +1015,7 @@ main {
 #telephone > div:last-child .bandeau:last-of-type {
   bottom: -10px;
   font-size: 30px;
-  background-image: url("../img/icons/Barre_bot.png");
+  background-image: url("../img/icons/Barre_bot.webp");
   height: 100px;
   background-position: center;
   background-repeat: no-repeat;
