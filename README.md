@@ -1,4 +1,4 @@
-# Ouroboros > [Tester le jeu](http://github.com](https://projet4.timmatane.ca/2024/tp3/eq2/)
+# Ouroboros > [Tester le jeu](https://projet4.timmatane.ca/2024/tp3/eq2/)
 
 Vous trouvez un téléphone abandonné et déchargé, que vous branchez et oubliez chez vous pendant une semaine. Lorsque vous vous en souvenez enfin, le téléphone est chargé et des dizaines de messages de proches apparaissent, cherchant à contacter le propriétaire. D’après ces messages, un certain Simon semble avoir disparu depuis au moins deux semaines.
 
