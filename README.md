@@ -6,3 +6,4 @@ Maintenant, à vous d’enquêter, de chercher pourquoi et comment il a pu dispa
 
 Qui sait ce qui se cache derrière cette mystérieuse disparition ?
 
+*Créé avec [Hazel](https://github.com/HazelStudio-Afk)*
